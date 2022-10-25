@@ -4,4 +4,5 @@ This repository contains the code and documentation generated for the  Auroral s
 
 ## Current version of the ontology model
 
-![Current version of the model](https://github.com/oeg-upm/auroral-shipmentBiomass-ontology/tree/main/diagrams/shipment.png "AURORAL shipment model")
+![Current version of the model]
+![shipment](https://user-images.githubusercontent.com/89158291/197796847-9972c380-c01b-4fae-82e3-f3f3af31563f.png)
