@@ -1,4 +1,4 @@
- @prefix biom: <https://auroral.iot.linkeddata.es/def/biomass#> .
+@prefix biom: <https://auroral.iot.linkeddata.es/def/biomass#> .
 @prefix core: <https://auroral.iot.linkeddata.es/def/core#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
