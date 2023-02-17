@@ -11,7 +11,7 @@ node [shape = rectangle, color="orange"]; "ship:Shipment" "ship:ShipmentUpdate" 
 	"core:User" -> "ship:ShipmentUpdate" [ label = "ship:updates" ];
 	"ship:Transportation" -> "xsd:string" [ label = "ship:uuidTrans" ];
 	"ship:DocumentType" -> "xsd:string" [ label = "ship:nameDocumentType" ];
-	"ship:Document" -> "xsd:string" [ label = "ship:hasType" ];
+	"owl:Thing" -> "xsd:string" [ label = "ship:hasType" ];
 	"ship:ShipmentUpdate" -> "xsd:dateTime" [ label = "ship:timeUpdate" ];
 	"ship:StoragePile" -> "xsd:string" [ label = "ship:uuidPile" ];
 	"ship:ShipmentUpdate" -> "ship:ShipmentUpdate" [ label = "ship:isParentOf" ];
