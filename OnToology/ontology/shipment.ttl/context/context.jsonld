@@ -4,6 +4,24 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#belongsTo",
       "@type" : "@id"
     },
+    "Address" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Address"
+    },
+    "DeliveryAddress" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#DeliveryAddress"
+    },
+    "hasPickupAddress" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#hasPickupAddress",
+      "@type" : "@id"
+    },
+    "companyName" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#companyName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "companyType" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#companyType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "Storage" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Storage"
     },
@@ -11,16 +29,28 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#tareKg",
       "@type" : "http://www.w3.org/2001/XMLSchema#float"
     },
-    "Organisation" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/core#Organisation"
+    "deliveryTime" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#deliveryTime",
+      "@type" : "@id"
     },
     "model" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#model",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "Organization" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Organization"
+    },
     "hasDocument" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#hasDocument",
       "@type" : "@id"
+    },
+    "belongsTO" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#belongsTO",
+      "@type" : "@id"
+    },
+    "city" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#city",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Product" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Product"
@@ -32,9 +62,20 @@
     "Transportation" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Transportation"
     },
+    "dateStart" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#dateStart",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "pickupTime" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#pickupTime",
+      "@type" : "@id"
+    },
     "hasPile" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#hasPile",
       "@type" : "@id"
+    },
+    "Customer" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Customer"
     },
     "ShipmentUpdate" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#ShipmentUpdate"
@@ -64,6 +105,10 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#remoteAddress",
       "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
     },
+    "hasDeliveryAddress" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#hasDeliveryAddress",
+      "@type" : "@id"
+    },
     "User" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#User"
     },
@@ -81,6 +126,9 @@
     "Shipment" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Shipment"
     },
+    "Price" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Price"
+    },
     "createdTime" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#createdTime",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
@@ -93,12 +141,23 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#name",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "postal" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#postal",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "location" : {
       "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
       "@type" : "@id"
     },
     "licencePlate" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#licencePlate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Sender" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Sender"
+    },
+    "address" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#address",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "uuidShip" : {
@@ -109,11 +168,18 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#isParentOf",
       "@type" : "@id"
     },
+    "DeliveryTime" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#DeliveryTime"
+    },
     "alt" : {
       "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt"
     },
     "Company" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Company"
+    },
+    "dateStop" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#dateStop",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "uuidTrans" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#uuidTrans",
@@ -130,9 +196,21 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#year",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
+    "days" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#days",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "timeUpdate" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#timeUpdate",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "amount" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#amount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "phone" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#phone",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "lat" : {
       "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
@@ -140,6 +218,13 @@
     "storedIn" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#storedIn",
       "@type" : "@id"
+    },
+    "apartement" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#apartement",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "PickupTime" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#PickupTime"
     },
     "uuidProduct" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#uuidProduct",
@@ -161,6 +246,10 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#nameDocumentType",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "inCurrency" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#inCurrency",
+      "@type" : "@id"
+    },
     "has" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#has",
       "@type" : "@id"
@@ -173,12 +262,22 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#hasOrigin",
       "@type" : "@id"
     },
+    "Currency" : {
+      "@id" : "http://publications.europa.eu/resource/authority/currency/Currency"
+    },
     "uuidCompany" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#uuidCompany",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "price" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#price",
+      "@type" : "@id"
+    },
     "Document" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Document"
+    },
+    "PickupAddress" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#PickupAddress"
     },
     "inShipment" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#inShipment",
@@ -190,6 +289,9 @@
     },
     "description" : {
       "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "Time" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Time"
     },
     "StoragePile" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#StoragePile"
