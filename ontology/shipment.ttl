@@ -35,7 +35,8 @@ geo:location rdf:type owl:ObjectProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#address
 ship:address rdf:type owl:ObjectProperty ;
-             rdfs:domain ship:Company ;
+             rdfs:domain ship:Address ,
+                         ship:Company ;
              rdfs:range ship:Address .
 
 
@@ -191,7 +192,6 @@ geo:long rdf:type owl:DatatypeProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#address
 ship:address rdf:type owl:DatatypeProperty ;
-             rdfs:domain ship:Address ;
              rdfs:range xsd:string .
 
 
@@ -236,7 +236,8 @@ ship:createdTime rdf:type owl:DatatypeProperty ;
 ###  https://auroral.iot.linkeddata.es/def/shipment#dateStart
 ship:dateStart rdf:type owl:DatatypeProperty ;
                rdfs:domain ship:Time ;
-               rdfs:range xsd:dateTime ;
+               rdfs:range xsd:dateTime ,
+                          owl:rational ;
                rdfs:label "date start" .
 
 
@@ -323,6 +324,12 @@ ship:remoteAddress rdf:type owl:DatatypeProperty ;
                    rdfs:domain ship:Document ;
                    rdfs:range xsd:anyURI ;
                    rdfs:label "remote address" .
+
+
+###  https://auroral.iot.linkeddata.es/def/shipment#stretch
+ship:stretch rdf:type owl:DatatypeProperty ;
+             rdfs:domain ship:Shipment ;
+             rdfs:range xsd:integer .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#tareKg
