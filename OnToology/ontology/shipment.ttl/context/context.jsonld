@@ -63,8 +63,7 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Transportation"
     },
     "dateStart" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#dateStart",
-      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#dateStart"
     },
     "pickupTime" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#pickupTime",
@@ -278,6 +277,10 @@
     },
     "PickupAddress" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#PickupAddress"
+    },
+    "stretch" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#stretch",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "inShipment" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#inShipment",

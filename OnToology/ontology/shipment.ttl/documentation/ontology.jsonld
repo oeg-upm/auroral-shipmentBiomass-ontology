@@ -304,6 +304,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  }, {
+    "@id" : "http://www.w3.org/2002/07/owl#rational"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#dateStop",
@@ -626,6 +628,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Storage"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#stretch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Shipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#tareKg",

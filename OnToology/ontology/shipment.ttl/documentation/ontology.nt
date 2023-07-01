@@ -206,6 +206,7 @@
 <https://auroral.iot.linkeddata.es/def/shipment#dateStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/shipment#dateStart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/shipment#Time> .
 <https://auroral.iot.linkeddata.es/def/shipment#dateStart> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://auroral.iot.linkeddata.es/def/shipment#dateStart> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#rational> .
 <https://auroral.iot.linkeddata.es/def/shipment#dateStart> <http://www.w3.org/2000/01/rdf-schema#label> "date start" .
 # 
 # https://auroral.iot.linkeddata.es/def/shipment#dateStop
@@ -279,6 +280,11 @@
 <https://auroral.iot.linkeddata.es/def/shipment#remoteAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/shipment#Document> .
 <https://auroral.iot.linkeddata.es/def/shipment#remoteAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://auroral.iot.linkeddata.es/def/shipment#remoteAddress> <http://www.w3.org/2000/01/rdf-schema#label> "remote address" .
+# 
+# https://auroral.iot.linkeddata.es/def/shipment#stretch
+<https://auroral.iot.linkeddata.es/def/shipment#stretch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://auroral.iot.linkeddata.es/def/shipment#stretch> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/shipment#Shipment> .
+<https://auroral.iot.linkeddata.es/def/shipment#stretch> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 # 
 # https://auroral.iot.linkeddata.es/def/shipment#tareKg
 <https://auroral.iot.linkeddata.es/def/shipment#tareKg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
