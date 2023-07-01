@@ -231,7 +231,8 @@
 ###  https://auroral.iot.linkeddata.es/def/shipment#dateStart
 :dateStart rdf:type owl:DatatypeProperty ;
            rdfs:domain :Time ;
-           rdfs:range xsd:dateTime ;
+           rdfs:range xsd:dateTime ,
+                      owl:rational ;
            rdfs:label "date start" .
 
 
@@ -318,6 +319,12 @@
                rdfs:domain :Document ;
                rdfs:range xsd:anyURI ;
                rdfs:label "remote address" .
+
+
+###  https://auroral.iot.linkeddata.es/def/shipment#stretch
+:stretch rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Shipment ;
+         rdfs:range xsd:integer .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#tareKg
