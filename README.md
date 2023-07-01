@@ -1,4 +1,4 @@
-# Auroral shipmentBiomass ontology
+# Auroral Logistic ontology
 
 This repository contains the code and documentation generated for the  Auroral shipmentBiomass ontology.
 
