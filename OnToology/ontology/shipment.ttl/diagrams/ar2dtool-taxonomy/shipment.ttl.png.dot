@@ -1,13 +1,15 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "ship:DocumentType" "ship:Address" "ship:DeliveryTime" "core:Organization" "core:User" "ship:Time" "ship:DeliveryAddress" "ship:Product" "ship:Document" "ship:PickupTime" "ship:Company" "ship:Sender" "biom:Biomass" "ship:PickupAddress" "ship:Customer" ; /*classes style*/
+node [shape = rectangle, color="black"]; "ship:DocumentType" "ship:Address" "ship:DeliveryTime" "ship:Price" "core:Organization" "core:User" "ship:Time" "ship:BuyerPrice" "ship:SellingPrice" "ship:DeliveryAddress" "ship:Product" "ship:Document" "ship:PickupTime" "ship:Receiver" "ship:Company" "ship:Sender" "biom:Biomass" "ship:PickupAddress" ; /*classes style*/
 	"biom:Biomass" -> "ship:Product" [ label = "rdfs:subClassOf" ];
 	"ship:DocumentType" -> "ship:Document" [ label = "rdfs:subClassOf" ];
+	"ship:BuyerPrice" -> "ship:Price" [ label = "rdfs:subClassOf" ];
 	"ship:PickupTime" -> "ship:Time" [ label = "rdfs:subClassOf" ];
-	"ship:Customer" -> "core:User" [ label = "rdfs:subClassOf" ];
+	"ship:Receiver" -> "core:User" [ label = "rdfs:subClassOf" ];
 	"ship:DeliveryAddress" -> "ship:Address" [ label = "rdfs:subClassOf" ];
 	"ship:Company" -> "core:Organization" [ label = "rdfs:subClassOf" ];
+	"ship:SellingPrice" -> "ship:Price" [ label = "rdfs:subClassOf" ];
 	"ship:DeliveryTime" -> "ship:Time" [ label = "rdfs:subClassOf" ];
 	"ship:PickupAddress" -> "ship:Address" [ label = "rdfs:subClassOf" ];
 	"ship:Sender" -> "core:User" [ label = "rdfs:subClassOf" ];
