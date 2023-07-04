@@ -68,6 +68,13 @@ ship:has rdf:type owl:ObjectProperty ;
          rdfs:label "has" .
 
 
+###  https://auroral.iot.linkeddata.es/def/shipment#hasBuyerPrice
+ship:hasBuyerPrice rdf:type owl:ObjectProperty ;
+                   rdfs:domain ship:Shipment ;
+                   rdfs:range ship:Price ;
+                   rdfs:label "has Buyer Price" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/shipment#hasDeliveryAddress
 ship:hasDeliveryAddress rdf:type owl:ObjectProperty ;
                         rdfs:domain ship:Shipment ;
@@ -101,6 +108,13 @@ ship:hasPile rdf:type owl:ObjectProperty ;
              rdfs:domain ship:Storage ;
              rdfs:range ship:StoragePile ;
              rdfs:label "has pile" .
+
+
+###  https://auroral.iot.linkeddata.es/def/shipment#hasSellingPrice
+ship:hasSellingPrice rdf:type owl:ObjectProperty ;
+                     rdfs:domain ship:Shipment ;
+                     rdfs:range ship:Price ;
+                     rdfs:label "has selling price" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#hasType
@@ -149,12 +163,6 @@ ship:pickupTime rdf:type owl:ObjectProperty ;
                 rdfs:domain ship:Shipment ;
                 rdfs:range ship:Time ;
                 rdfs:label "pickup time" .
-
-
-###  https://auroral.iot.linkeddata.es/def/shipment#price
-ship:price rdf:type owl:ObjectProperty ;
-           rdfs:domain ship:Shipment ;
-           rdfs:range ship:Price .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#provides
