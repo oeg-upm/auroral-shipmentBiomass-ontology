@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "ship:Shipment" "ship:ShipmentUpdate" "ship:DocumentType" "ship:Address" "ship:Price" "core:User" "ship:Time" "http://publications.europa.eu/resource/authority/currency/Currency" "ship:Product" "ship:Document" "ship:Storage" "ship:StoragePile" "ship:Transportation" "ship:Company" "geo:Point" "ship:Sender" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "ship:Shipment" "ship:ShipmentUpdate" "ship:DocumentType" "ship:Address" "ship:Price" "core:User" "ship:Time" "http://publications.europa.eu/resource/authority/currency/Currency" "ship:Product" "ship:Document" "ship:Storage" "ship:StoragePile" "ship:Receiver" "ship:Transportation" "ship:Company" "geo:Point" "ship:Sender" ; /*classes style*/
 	"ship:Time" -> "xsd:dateTime" [ label = "ship:dateStop" ];
 	"ship:ShipmentUpdate" -> "ship:Document" [ label = "ship:hasDocument" ];
 	"ship:Company" -> "xsd:string" [ label = "ship:companyType" ];
@@ -17,22 +17,27 @@ node [shape = rectangle, color="orange"]; "ship:Shipment" "ship:ShipmentUpdate" 
 	"ship:Address" -> "ship:Address" [ label = "ship:address" ];
 	"ship:Time" -> "xsd:dateTime" [ label = "ship:dateStart" ];
 	"ship:DocumentType" -> "xsd:string" [ label = "ship:nameDocumentType" ];
-	"ship:Shipment" -> "ship:Price" [ label = "ship:price" ];
+	"ship:Shipment" -> "ship:Price" [ label = "ship:hasSellingPrice" ];
 	"ship:Document" -> "ship:DocumentType" [ label = "ship:hasType" ];
 	"ship:Price" -> "http://publications.europa.eu/resource/authority/currency/Currency" [ label = "ship:inCurrency" ];
 	"ship:Transportation" -> "xsd:string" [ label = "ship:licencePlate" ];
+	"ship:Receiver" -> "xsd:integer" [ label = "ship:numberActiveBuyer" ];
 	"ship:Shipment" -> "xsd:integer" [ label = "ship:stretch" ];
 	"core:User" -> "ship:Company" [ label = "ship:belongsTo" ];
 	"ship:Shipment" -> "xsd:dateTime" [ label = "ship:createdTime" ];
 	"ship:Storage" -> "ship:StoragePile" [ label = "ship:hasPile" ];
 	"ship:Transportation" -> "xsd:string" [ label = "ship:model" ];
+	"ship:Shipment" -> "ship:Price" [ label = "ship:hasBuyerPrice" ];
 	"ship:Product" -> "xsd:string" [ label = "ship:uuidProduct" ];
 	"ship:Company" -> "xsd:string" [ label = "ship:phone" ];
 	"ship:Shipment" -> "owl:Thing" [ label = "ship:hasUpdate" ];
 	"ship:ShipmentUpdate" -> "xsd:string" [ label = "ship:uuidShipUpdate" ];
 	"ship:Company" -> "xsd:string" [ label = "ship:days" ];
+	"ship:Sender" -> "xsd:integer" [ label = "ship:numberActiveProducer" ];
 	"ship:Transportation" -> "xsd:integer" [ label = "ship:year" ];
+	"core:User" -> "ship:Product" [ label = "ship:receives" ];
 	"ship:Transportation" -> "xsd:string" [ label = "ship:uuidTrans" ];
+	"ship:Product" -> "xsd:string" [ label = "ship:currentAmount" ];
 	"ship:Address" -> "xsd:string" [ label = "ship:postal" ];
 	"ship:Shipment" -> "ship:Time" [ label = "ship:pickupTime" ];
 	"ship:ShipmentUpdate" -> "xsd:dateTime" [ label = "ship:timeUpdate" ];
@@ -55,6 +60,8 @@ node [shape = rectangle, color="orange"]; "ship:Shipment" "ship:ShipmentUpdate" 
 	"ship:Transportation" -> "xsd:string" [ label = "ship:name" ];
 	"ship:Address" -> "xsd:string" [ label = "ship:apartement" ];
 	"ship:Storage" -> "xsd:string" [ label = "ship:uuidStorage" ];
+	"core:User" -> "ship:Product" [ label = "ship:provides" ];
+	"ship:Product" -> "xsd:string" [ label = "ship:totalAmount" ];
 	"ship:DocumentType" -> "xsd:string" [ label = "ship:uuidDocumentType" ];
 
 }

@@ -172,12 +172,22 @@
 
     <NamedIndividual rdf:about="http://astrea.linkeddata.es/report">
         <rdf:type rdf:resource="https://w3id.org/def/astrea#ShapeReport"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#a7a6ce44a68e1a50c428e9e3d0970528"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#a9ccf343c6eb4dfdacca7e3a2203f382"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#ab93e1fdaff42db0c1859a3b55819ff5"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#afae298219f2cc330bc3210f27402037"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#b0d9bf98ceab6d20ac24cddc5cbcd0f2"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#b0e5b0514bf6b4786dfbc53bda616d66"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#b28b9621ed4c7b61c46ef9d70c95ad86"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#b2d081faf5195148c65301279330e384"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#b7d7974b26cece55098a235b4fd3e478"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#ba06dcdad9ede7fbf35a488558fbb4b0"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#be0e88352deafa3b37a99ab06a57d648"/>
-        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#c8bc0518e07547668f9aff09b7b65b05"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#cf0ed8f43f47d269ad9c10b6d14aea04"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#cf2fcbab2428f7fa7b862295ffc6915c"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#cfead08aa4c242dd8e2e9044dd8115d5"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#d72aab52594e6fdaccc80bf105d5b17a"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#d8215851c18a6120670f25340f8c0f55"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#e0778c0733e34ecf6259672ee456cb66"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#e2d905575af56f661cd9bf17cda560e7"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#e544bb63c76c9b2b0715062111c828cb"/>
@@ -188,25 +198,39 @@
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#f148b77c0ee0e4e7c951cd80ec629f5b"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#f8c2de23e332362be805f5c9843521a5"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#fbaa57eba0d50a17a8e5b9c313234027"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#fde3e9949ffbeba75dc978f816ce6132"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#ffa627c90b2f93431bad38fc95750b9e"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#01bbffda32970efe94e8838f62d5328c"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#02f8955adc47b4e7513fea0af15cde76"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#0255a9761e38ec900396abdb73e0df1a"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#04645a7cbbb3188c06c9acdb323f9183"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#061491b7e5eaa307765d282e1d1b2754"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#08498f67f7d8a3ec8b3ab0230f76aa21"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#086f19af00369a14b967ff4705669746"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#1a33aa83ec1972c644a5ccdca6cb5c7a"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#1d5652bde9bd794d0ae5c3c9bf47f0f8"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#154043af44acdbf387c56b6ab465bec8"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#164ee5509c418536ee500cbb1aee0de3"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#172382a059e61f60b739a6e8d904fff3"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#20f688b974498dfa247df5cd86b45653"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#3cfcfd0eb8a36ea564d548be8e0e34e3"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#3e3eaf9c59965b04ed28c5f1c9e16796"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#3ef793712378e097aac823894a277e63"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#3f789012c43b6d5c65c705707831cb24"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#309d5ef5eb341b9b2fcf9a377049aefe"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#3123c83d0b3b8ce256a20f932ebb1c14"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#32e22d23b4f05254b8ab00b54d1213ea"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#3306b587344dd8be7df4c3c81ddda1b0"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#335b086086f1fc22e4af9c626c11092d"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#37869b6ed632429468397e3c6d8b6394"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#3816d892dc988081c37f0b7f7ab911b6"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#4e6228842d38bb1dd70696e5f8845231"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#43e4a7a540e33134714b5d6e7b2f11c5"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#4496ce8f544702a6870f7a7ccf5f3a38"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#5d95cc7e2874d4c8da49e860901b7500"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#5361a61e4a5d9cc8bac91c61d6fb4a49"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#5443e5395dc035d1041962b157b146ac"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#596ebffcc56c7a347b35b019766efd95"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#6a512e50397b946cf31afe5d187a7353"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#6ac36a5052302112398fedafbe298a14"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#629534aaf1332b189f1dff94994c0747"/>
@@ -216,13 +240,18 @@
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#71694c58c5f5ccf2b0994bbd3925fb32"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#7371e83b51fc394836d952c235b5affe"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#7576dca79bdc1b122641e26d026149dd"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#759e6968da8c8f9eda8bcdda0a0afb3d"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#8b466d1f43df61d1bdd64735b48dba4b"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#8f8d37498eedecf91b894158b6379068"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#86a72823e63c9790092691a323192656"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#86ac0ec33c4588931b99fd34c2a1a0e5"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#87684707d2d507392eec1226f2e83368"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#89ecbeb169654e25bfb0a36d7cd4a501"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#898875bf865fcd7697619b15e4f4a024"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#9f50e365e72154e51599b4a9f75543bd"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#9f5945ee8264f9ec9e9269d182095e19"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#933f709a3ac7197c9451482492ca22e3"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#964649b812d9b794021c7cf9f521221f"/>
         <astrea:generatedShapesFrom rdf:resource="https://astrea.linkeddata.es/report/0512681903"/>
     </NamedIndividual>
     
@@ -240,6 +269,75 @@
     
 
 
+    <!-- https://astrea.linkeddata.es/shapes#a7a6ce44a68e1a50c428e9e3d0970528 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#a7a6ce44a68e1a50c428e9e3d0970528">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#companyName"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#a9ccf343c6eb4dfdacca7e3a2203f382 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#a9ccf343c6eb4dfdacca7e3a2203f382">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Delivery Address</rdfs:label>
+        <shacl:name>Delivery Address</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#DeliveryAddress"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#ab93e1fdaff42db0c1859a3b55819ff5 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#ab93e1fdaff42db0c1859a3b55819ff5">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Customer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#afae298219f2cc330bc3210f27402037 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#afae298219f2cc330bc3210f27402037">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>amount</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <shacl:name>amount</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#amount"/>
+        <shacl:pattern>(\+|-)?([0-9]+(\.[0-9]*)?|\.[0-9]+)([Ee](\+|-)?[0-9]+)?|(\+|-)?INF|NaN</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#b0d9bf98ceab6d20ac24cddc5cbcd0f2 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#b0d9bf98ceab6d20ac24cddc5cbcd0f2">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:class rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:class rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Address"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:datatype rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Address"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#address"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
     <!-- https://astrea.linkeddata.es/shapes#b0e5b0514bf6b4786dfbc53bda616d66 -->
 
 
@@ -250,6 +348,47 @@
         <shacl:name>in transportation</shacl:name>
         <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
         <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#inTransportation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#b28b9621ed4c7b61c46ef9d70c95ad86 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#b28b9621ed4c7b61c46ef9d70c95ad86">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>in currency</rdfs:label>
+        <shacl:class rdf:resource="http://publications.europa.eu/resource/authority/currency/Currency"/>
+        <shacl:name>in currency</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#inCurrency"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#b2d081faf5195148c65301279330e384 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#b2d081faf5195148c65301279330e384">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Time</rdfs:label>
+        <shacl:name>Time</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#cf0ed8f43f47d269ad9c10b6d14aea04"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#3123c83d0b3b8ce256a20f932ebb1c14"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Time"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#b7d7974b26cece55098a235b4fd3e478 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#b7d7974b26cece55098a235b4fd3e478">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#87684707d2d507392eec1226f2e83368"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Sender"/>
     </NamedIndividual>
     
 
@@ -284,15 +423,29 @@
     
 
 
-    <!-- https://astrea.linkeddata.es/shapes#c8bc0518e07547668f9aff09b7b65b05 -->
+    <!-- https://astrea.linkeddata.es/shapes#cf0ed8f43f47d269ad9c10b6d14aea04 -->
 
 
-    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#c8bc0518e07547668f9aff09b7b65b05">
-        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
-        <rdfs:label>Organisation</rdfs:label>
-        <shacl:name>Organisation</shacl:name>
-        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
-        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/core#Organisation"/>
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#cf0ed8f43f47d269ad9c10b6d14aea04">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#dateStop"/>
+        <shacl:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?|(24:00:00(\.0+)?))(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#cf2fcbab2428f7fa7b862295ffc6915c -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#cf2fcbab2428f7fa7b862295ffc6915c">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has pickup address</rdfs:label>
+        <shacl:class rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Address"/>
+        <shacl:name>has pickup address</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#hasPickupAddress"/>
     </NamedIndividual>
     
 
@@ -322,6 +475,19 @@
         <shacl:name>belongs to</shacl:name>
         <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
         <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#belongsTo"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#d8215851c18a6120670f25340f8c0f55 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#d8215851c18a6120670f25340f8c0f55">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#apartement"/>
+        <shacl:pattern>.*</shacl:pattern>
     </NamedIndividual>
     
 
@@ -439,6 +605,7 @@
         <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#f8c2de23e332362be805f5c9843521a5"/>
         <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#04645a7cbbb3188c06c9acdb323f9183"/>
         <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#086f19af00369a14b967ff4705669746"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#3306b587344dd8be7df4c3c81ddda1b0"/>
         <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Document"/>
     </NamedIndividual>
     
@@ -474,6 +641,19 @@
     
 
 
+    <!-- https://astrea.linkeddata.es/shapes#fde3e9949ffbeba75dc978f816ce6132 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#fde3e9949ffbeba75dc978f816ce6132">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#postal"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
     <!-- https://astrea.linkeddata.es/shapes#ffa627c90b2f93431bad38fc95750b9e -->
 
 
@@ -484,6 +664,19 @@
         <shacl:name>location</shacl:name>
         <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
         <shacl:path rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#01bbffda32970efe94e8838f62d5328c -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#01bbffda32970efe94e8838f62d5328c">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#companyType"/>
+        <shacl:pattern>.*</shacl:pattern>
     </NamedIndividual>
     
 
@@ -547,6 +740,19 @@
     
 
 
+    <!-- https://astrea.linkeddata.es/shapes#08498f67f7d8a3ec8b3ab0230f76aa21 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#08498f67f7d8a3ec8b3ab0230f76aa21">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Currency</rdfs:label>
+        <shacl:name>Currency</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="http://publications.europa.eu/resource/authority/currency/Currency"/>
+    </NamedIndividual>
+    
+
+
     <!-- https://astrea.linkeddata.es/shapes#086f19af00369a14b967ff4705669746 -->
 
 
@@ -562,6 +768,20 @@
     
 
 
+    <!-- https://astrea.linkeddata.es/shapes#1a33aa83ec1972c644a5ccdca6cb5c7a -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#1a33aa83ec1972c644a5ccdca6cb5c7a">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has delivery address</rdfs:label>
+        <shacl:class rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Address"/>
+        <shacl:name>has delivery address</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#hasDeliveryAddress"/>
+    </NamedIndividual>
+    
+
+
     <!-- https://astrea.linkeddata.es/shapes#1d5652bde9bd794d0ae5c3c9bf47f0f8 -->
 
 
@@ -573,6 +793,35 @@
         <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#email"/>
         <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#154043af44acdbf387c56b6ab465bec8 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#154043af44acdbf387c56b6ab465bec8">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Price</rdfs:label>
+        <shacl:name>Price</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#afae298219f2cc330bc3210f27402037"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#b28b9621ed4c7b61c46ef9d70c95ad86"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Price"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#164ee5509c418536ee500cbb1aee0de3 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#164ee5509c418536ee500cbb1aee0de3">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>delivery time</rdfs:label>
+        <shacl:class rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Time"/>
+        <shacl:name>delivery time</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#deliveryTime"/>
     </NamedIndividual>
     
 
@@ -619,6 +868,19 @@
     
 
 
+    <!-- https://astrea.linkeddata.es/shapes#3e3eaf9c59965b04ed28c5f1c9e16796 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#3e3eaf9c59965b04ed28c5f1c9e16796">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Organization</rdfs:label>
+        <shacl:name>Organization</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/core#Organization"/>
+    </NamedIndividual>
+    
+
+
     <!-- https://astrea.linkeddata.es/shapes#3ef793712378e097aac823894a277e63 -->
 
 
@@ -628,6 +890,19 @@
         <shacl:name>Point</shacl:name>
         <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
         <shacl:targetClass rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#3f789012c43b6d5c65c705707831cb24 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#3f789012c43b6d5c65c705707831cb24">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Pickup Address</rdfs:label>
+        <shacl:name>Pickup Address</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#PickupAddress"/>
     </NamedIndividual>
     
 
@@ -643,6 +918,22 @@
         <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#uuidProduct"/>
         <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#3123c83d0b3b8ce256a20f932ebb1c14 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#3123c83d0b3b8ce256a20f932ebb1c14">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>date start</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+        <shacl:name>date start</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#dateStart"/>
+        <shacl:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?|(24:00:00(\.0+)?))(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</shacl:pattern>
     </NamedIndividual>
     
 
@@ -666,9 +957,54 @@
 
     <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#3306b587344dd8be7df4c3c81ddda1b0">
         <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>has type</rdfs:label>
+        <shacl:class rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:class rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#DocumentType"/>
         <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:datatype rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#DocumentType"/>
+        <shacl:name>has type</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
         <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#hasType"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#335b086086f1fc22e4af9c626c11092d -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#335b086086f1fc22e4af9c626c11092d">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Delivery Time</rdfs:label>
+        <shacl:name>Delivery Time</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#DeliveryTime"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#37869b6ed632429468397e3c6d8b6394 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#37869b6ed632429468397e3c6d8b6394">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#phone"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#3816d892dc988081c37f0b7f7ab911b6 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#3816d892dc988081c37f0b7f7ab911b6">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#days"/>
         <shacl:pattern>.*</shacl:pattern>
     </NamedIndividual>
     
@@ -687,6 +1023,7 @@
         <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#edcb413a622a9afc87c5046a07991086"/>
         <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#02f8955adc47b4e7513fea0af15cde76"/>
         <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#32e22d23b4f05254b8ab00b54d1213ea"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#3306b587344dd8be7df4c3c81ddda1b0"/>
         <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#5443e5395dc035d1041962b157b146ac"/>
         <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#6a512e50397b946cf31afe5d187a7353"/>
         <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#89ecbeb169654e25bfb0a36d7cd4a501"/>
@@ -721,6 +1058,20 @@
     
 
 
+    <!-- https://astrea.linkeddata.es/shapes#5d95cc7e2874d4c8da49e860901b7500 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#5d95cc7e2874d4c8da49e860901b7500">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>pickup time</rdfs:label>
+        <shacl:class rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Time"/>
+        <shacl:name>pickup time</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#pickupTime"/>
+    </NamedIndividual>
+    
+
+
     <!-- https://astrea.linkeddata.es/shapes#5361a61e4a5d9cc8bac91c61d6fb4a49 -->
 
 
@@ -745,6 +1096,18 @@
         <shacl:name>stored in</shacl:name>
         <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
         <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#storedIn"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#596ebffcc56c7a347b35b019766efd95 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#596ebffcc56c7a347b35b019766efd95">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:class rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Price"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#price"/>
     </NamedIndividual>
     
 
@@ -849,6 +1212,12 @@
         <shacl:name>Shipment</shacl:name>
         <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
         <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#ba06dcdad9ede7fbf35a488558fbb4b0"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#cf2fcbab2428f7fa7b862295ffc6915c"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#1a33aa83ec1972c644a5ccdca6cb5c7a"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#164ee5509c418536ee500cbb1aee0de3"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#5d95cc7e2874d4c8da49e860901b7500"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#596ebffcc56c7a347b35b019766efd95"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#86a72823e63c9790092691a323192656"/>
         <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#933f709a3ac7197c9451482492ca22e3"/>
         <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Shipment"/>
     </NamedIndividual>
@@ -885,6 +1254,19 @@
     
 
 
+    <!-- https://astrea.linkeddata.es/shapes#759e6968da8c8f9eda8bcdda0a0afb3d -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#759e6968da8c8f9eda8bcdda0a0afb3d">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#city"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
     <!-- https://astrea.linkeddata.es/shapes#8b466d1f43df61d1bdd64735b48dba4b -->
 
 
@@ -911,6 +1293,50 @@
         <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#name"/>
         <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#86a72823e63c9790092691a323192656 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#86a72823e63c9790092691a323192656">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#stretch"/>
+        <shacl:pattern>[\-+]?[0-9]+</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#86ac0ec33c4588931b99fd34c2a1a0e5 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#86ac0ec33c4588931b99fd34c2a1a0e5">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Address</rdfs:label>
+        <shacl:name>Address</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#b0d9bf98ceab6d20ac24cddc5cbcd0f2"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#d8215851c18a6120670f25340f8c0f55"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#fde3e9949ffbeba75dc978f816ce6132"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#759e6968da8c8f9eda8bcdda0a0afb3d"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Address"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#87684707d2d507392eec1226f2e83368 -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#87684707d2d507392eec1226f2e83368">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>belongs to</rdfs:label>
+        <shacl:class rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Company"/>
+        <shacl:name>belongs to</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
+        <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#belongsTO"/>
     </NamedIndividual>
     
 
@@ -952,8 +1378,13 @@
         <rdfs:label>Company</rdfs:label>
         <shacl:name>Company</shacl:name>
         <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#a7a6ce44a68e1a50c428e9e3d0970528"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#b0d9bf98ceab6d20ac24cddc5cbcd0f2"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#01bbffda32970efe94e8838f62d5328c"/>
         <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#0255a9761e38ec900396abdb73e0df1a"/>
         <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#1d5652bde9bd794d0ae5c3c9bf47f0f8"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#37869b6ed632429468397e3c6d8b6394"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#3816d892dc988081c37f0b7f7ab911b6"/>
         <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#6ac36a5052302112398fedafbe298a14"/>
         <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Company"/>
     </NamedIndividual>
@@ -986,6 +1417,19 @@
         <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <shacl:path rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#createdTime"/>
         <shacl:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?|(24:00:00(\.0+)?))(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</shacl:pattern>
+    </NamedIndividual>
+    
+
+
+    <!-- https://astrea.linkeddata.es/shapes#964649b812d9b794021c7cf9f521221f -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#964649b812d9b794021c7cf9f521221f">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <rdfs:label>Pickup Time</rdfs:label>
+        <shacl:name>Pickup Time</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:targetClass rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#PickupTime"/>
     </NamedIndividual>
 </rdf:RDF>
 
