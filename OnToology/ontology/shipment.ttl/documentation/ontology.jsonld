@@ -77,6 +77,12 @@
     "@value" : "Address"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bought Quantity"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#BuyerPrice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -679,6 +685,24 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Product"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#quantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#quantityInShipment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Shipment"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#receives",

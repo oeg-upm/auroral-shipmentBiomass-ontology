@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "ship:Shipment" "ship:ShipmentUpdate" "ship:DocumentType" "ship:Address" "ship:Price" "core:User" "ship:Time" "http://publications.europa.eu/resource/authority/currency/Currency" "ship:Product" "ship:Document" "ship:Storage" "ship:StoragePile" "ship:Receiver" "ship:Transportation" "ship:Company" "geo:Point" "ship:Sender" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "ship:Shipment" "ship:ShipmentUpdate" "ship:DocumentType" "ship:Address" "ship:Price" "core:User" "ship:Time" "http://publications.europa.eu/resource/authority/currency/Currency" "ship:Product" "ship:Document" "ship:BoughtQuantity" "ship:Storage" "ship:StoragePile" "ship:Receiver" "ship:Transportation" "ship:Company" "geo:Point" "ship:Sender" ; /*classes style*/
 	"ship:Time" -> "xsd:dateTime" [ label = "ship:dateStop" ];
 	"ship:ShipmentUpdate" -> "ship:Document" [ label = "ship:hasDocument" ];
 	"ship:Company" -> "xsd:string" [ label = "ship:companyType" ];
@@ -38,6 +38,7 @@ node [shape = rectangle, color="orange"]; "ship:Shipment" "ship:ShipmentUpdate" 
 	"core:User" -> "ship:Product" [ label = "ship:receives" ];
 	"ship:Transportation" -> "xsd:string" [ label = "ship:uuidTrans" ];
 	"ship:Product" -> "xsd:string" [ label = "ship:currentAmount" ];
+	"ship:Product" -> "ship:BoughtQuantity" [ label = "ship:quantity" ];
 	"ship:Address" -> "xsd:string" [ label = "ship:postal" ];
 	"ship:Shipment" -> "ship:Time" [ label = "ship:pickupTime" ];
 	"ship:ShipmentUpdate" -> "xsd:dateTime" [ label = "ship:timeUpdate" ];
@@ -47,6 +48,7 @@ node [shape = rectangle, color="orange"]; "ship:Shipment" "ship:ShipmentUpdate" 
 	"ship:Shipment" -> "ship:Address" [ label = "ship:hasPickupAddress" ];
 	"ship:Company" -> "xsd:string" [ label = "ship:uuidCompany" ];
 	"ship:Storage" -> "geo:Point" [ label = "geo:location" ];
+	"ship:BoughtQuantity" -> "ship:Shipment" [ label = "ship:quantityInShipment" ];
 	"ship:ShipmentUpdate" -> "ship:Storage" [ label = "ship:storedIn" ];
 	"ship:Shipment" -> "xsd:string" [ label = "ship:uuidShip" ];
 	"ship:Company" -> "xsd:string" [ label = "ship:companyName" ];

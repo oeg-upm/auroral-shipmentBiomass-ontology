@@ -146,6 +146,16 @@
 <https://auroral.iot.linkeddata.es/def/shipment#provides> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/shipment#Product> .
 <https://auroral.iot.linkeddata.es/def/shipment#provides> <http://www.w3.org/2000/01/rdf-schema#label> "provides" .
 # 
+# https://auroral.iot.linkeddata.es/def/shipment#quantity
+<https://auroral.iot.linkeddata.es/def/shipment#quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/shipment#quantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/shipment#Product> .
+<https://auroral.iot.linkeddata.es/def/shipment#quantity> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity> .
+# 
+# https://auroral.iot.linkeddata.es/def/shipment#quantityInShipment
+<https://auroral.iot.linkeddata.es/def/shipment#quantityInShipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/shipment#quantityInShipment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity> .
+<https://auroral.iot.linkeddata.es/def/shipment#quantityInShipment> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/shipment#Shipment> .
+# 
 # https://auroral.iot.linkeddata.es/def/shipment#receives
 <https://auroral.iot.linkeddata.es/def/shipment#receives> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/shipment#receives> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#User> .
@@ -440,6 +450,10 @@
 # https://auroral.iot.linkeddata.es/def/shipment#Address
 <https://auroral.iot.linkeddata.es/def/shipment#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/shipment#Address> <http://www.w3.org/2000/01/rdf-schema#label> "Address" .
+# 
+# https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity
+<https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "Bought Quantity" .
 # 
 # https://auroral.iot.linkeddata.es/def/shipment#BuyerPrice
 <https://auroral.iot.linkeddata.es/def/shipment#BuyerPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

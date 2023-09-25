@@ -152,6 +152,9 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#createdTime",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
+    "BoughtQuantity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity"
+    },
     "hasType" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#hasType",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -163,6 +166,10 @@
     "postal" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#postal",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "quantity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#quantity",
+      "@type" : "@id"
     },
     "location" : {
       "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
@@ -328,6 +335,10 @@
     },
     "StoragePile" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#StoragePile"
+    },
+    "quantityInShipment" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#quantityInShipment",
+      "@type" : "@id"
     },
     "currentAmount" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/shipment#currentAmount",
