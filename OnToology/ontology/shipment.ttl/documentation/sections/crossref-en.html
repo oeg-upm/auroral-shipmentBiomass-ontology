@@ -14,6 +14,10 @@ This section provides details for each class and property defined by [Ontology N
             title="https://auroral.iot.linkeddata.es/def/biomass#Biomass">Biomass</a>
       </li>
       <li>
+         <a href="#BoughtQuantity"
+            title="https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity">Bought Quantity</a>
+      </li>
+      <li>
          <a href="#BuyerPrice"
             title="https://auroral.iot.linkeddata.es/def/shipment#BuyerPrice">
             <span>buyer price</span>
@@ -165,6 +169,28 @@ This section provides details for each class and property defined by [Ontology N
             <a href="#Product"
                title="https://auroral.iot.linkeddata.es/def/shipment#Product">Product</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BoughtQuantity">
+      <h3>Bought Quantity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#quantityInShipment"
+               title="https://auroral.iot.linkeddata.es/def/shipment#quantityInShipment">quantity in shipment</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#quantity"
+               title="https://auroral.iot.linkeddata.es/def/shipment#quantity">quantity</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -463,6 +489,8 @@ This section provides details for each class and property defined by [Ontology N
                title="https://auroral.iot.linkeddata.es/def/shipment#currentAmount">current amount</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#inShipment"
                title="https://auroral.iot.linkeddata.es/def/shipment#inShipment">in shipment</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#quantity"
+               title="https://auroral.iot.linkeddata.es/def/shipment#quantity">quantity</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#totalAmount"
                title="https://auroral.iot.linkeddata.es/def/shipment#totalAmount">total amount</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#uuidProduct"
@@ -575,6 +603,8 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#inShipment"
                title="https://auroral.iot.linkeddata.es/def/shipment#inShipment">in shipment</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#quantityInShipment"
+               title="https://auroral.iot.linkeddata.es/def/shipment#quantityInShipment">quantity in shipment</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -853,6 +883,18 @@ This section provides details for each class and property defined by [Ontology N
       <li>
          <a href="#provides"
             title="https://auroral.iot.linkeddata.es/def/shipment#provides">provides</a>
+      </li>
+      <li>
+         <a href="#quantity"
+            title="https://auroral.iot.linkeddata.es/def/shipment#quantity">
+            <span>quantity</span>
+         </a>
+      </li>
+      <li>
+         <a href="#quantityInShipment"
+            title="https://auroral.iot.linkeddata.es/def/shipment#quantityInShipment">
+            <span>quantity in shipment</span>
+         </a>
       </li>
       <li>
          <a href="#receives"
@@ -1373,6 +1415,54 @@ This section provides details for each class and property defined by [Ontology N
             <dd>
                <a href="#Product"
                   title="https://auroral.iot.linkeddata.es/def/shipment#Product">Product</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="quantity">
+      <h3>quantity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#quantity</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Product"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#Product">Product</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#BoughtQuantity"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity">Bought Quantity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="quantityInShipment">
+      <h3>quantity in shipment<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#quantityInShipment</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#BoughtQuantity"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity">Bought Quantity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Shipment"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#Shipment">Shipment</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
