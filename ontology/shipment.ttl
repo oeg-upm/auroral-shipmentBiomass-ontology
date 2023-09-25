@@ -172,6 +172,18 @@ ship:provides rdf:type owl:ObjectProperty ;
               rdfs:label "provides" .
 
 
+###  https://auroral.iot.linkeddata.es/def/shipment#quantity
+ship:quantity rdf:type owl:ObjectProperty ;
+              rdfs:domain ship:Product ;
+              rdfs:range ship:BoughtQuantity .
+
+
+###  https://auroral.iot.linkeddata.es/def/shipment#quantityInShipment
+ship:quantityInShipment rdf:type owl:ObjectProperty ;
+                        rdfs:domain ship:BoughtQuantity ;
+                        rdfs:range ship:Shipment .
+
+
 ###  https://auroral.iot.linkeddata.es/def/shipment#receives
 ship:receives rdf:type owl:ObjectProperty ;
               rdfs:domain core:User ;
@@ -506,6 +518,11 @@ core:User rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/shipment#Address
 ship:Address rdf:type owl:Class ;
              rdfs:label "Address" .
+
+
+###  https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity
+ship:BoughtQuantity rdf:type owl:Class ;
+                    rdfs:label "Bought Quantity" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#BuyerPrice
