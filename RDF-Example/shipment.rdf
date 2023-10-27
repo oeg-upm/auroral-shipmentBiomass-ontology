@@ -1,25 +1,24 @@
-<<<<<<< HEAD
-@prefix ship: https://auroral.iot.linkeddata.es/def/shipment# .
-@prefix core: https://auroral.iot.linkeddata.es/def/core# . 
-@prefix  geo: http://www.w3.org/2003/01/geo/wgs84_pos#
-@prefix biom:https://auroral.iot.linkeddata.es/def/biomass# .
-
+@prefix ship: <https://auroral.iot.linkeddata.es/def/shipment#>.
+@prefix core: <https://auroral.iot.linkeddata.es/def/core#>. 
+@prefix  geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix biom: <https://auroral.iot.linkeddata.es/def/biomass#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cur: <http://publications.europa.eu/resource/authority/currency/>.
 biom:Briquette a ship:Product; 
-    ship:inShipment shipment1;
-    ship:uuidProduct ship:"123"^^xsd:string. 
-
+    ship:uuidProduct "123"^^xsd:string ;
+    ship:inShipment ship:shipment1.
+   
 ship:shipment1 a ship:Shipment ;
     ship:hasDeliveryAddress ship:DeliveryAddress1 ;
     ship:hasPickupAddress ship:PickupAddress1;
     ship:inShipment biom:Briquette;
-
-    ship:price ship:Price1
+    ship:price  ship:Price1;
     ship:uuidShipment "491"^^xsd:string ;
     ship:createdTime "1201-01-01T12:10:14"^^xsd:dateTime ;
-    ship:orderDescription  ns1:"shipment of biuomass product"^^xsd:string;
-    ship:height ship:"20 cm"^^xsd:string;
-    ship:weight ship:"2 kg"^^xsd:string;
-    ship:width ship:"25 cm"^^xsd:string;
+    ship:orderDescription  "shipment of biuomass product"^^xsd:string;
+    ship:height "20 cm"^^xsd:string;
+    ship:weight "2 kg"^^xsd:string;
+    ship:width "25 cm"^^xsd:string.
 
 ship:DeliveryAddress1 a ship:Address; 
     ship:address "Camino Viejo"^^xsd:string; 
@@ -33,49 +32,9 @@ ship:PickupAddress1 a ship:Address;
     ship:postal "3029"^^xsd:string; 
     ship:city "Madrid"^^xsd:string. 
 
-ship:Price a ship:Price; 
-    ship:amount "12";
-    ship:inCurrency Euro.
+ship:Price1 a ship:Price; 
+    ship:amount "12"^^xsd:float;
+    ship:inCurrency cur:Euro.
 
 cur:Euro a cur:Currency. 
-=======
-@prefix ship: https://auroral.iot.linkeddata.es/def/shipment# .
-@prefix core: https://auroral.iot.linkeddata.es/def/core# . 
-@prefix  geo: http://www.w3.org/2003/01/geo/wgs84_pos#
-@prefix biom:https://auroral.iot.linkeddata.es/def/biomass# .
 
-biom:Briquette a ship:Product; 
-    ship:inShipment shipment1;
-    ship:uuidProduct ship:"123"^^xsd:string. 
-
-ship:shipment1 a ship:Shipment ;
-    ship:hasDeliveryAddress ship:DeliveryAddress1 ;
-    ship:hasPickupAddress ship:PickupAddress1;
-    ship:inShipment biom:Briquette;
-
-    ship:price ship:Price1
-    ship:uuidShipment "491"^^xsd:string ;
-    ship:createdTime "1201-01-01T12:10:14"^^xsd:dateTime ;
-    ship:orderDescription  ns1:"shipment of biuomass product"^^xsd:string;
-    ship:height ship:"20 cm"^^xsd:string;
-    ship:weight ship:"2 kg"^^xsd:string;
-    ship:width ship:"25 cm"^^xsd:string;
-
-ship:DeliveryAddress1 a ship:Address; 
-    ship:address "Camino Viejo"^^xsd:string; 
-    ship:apartment "12"^^xsd:string; 
-    ship:postal "3080"^^xsd:string; 
-    ship:city "Madrid"^^xsd:string. 
-
-ship:PickupAddress1 a ship:Address; 
-    ship:address "Alche"^^xsd:string; 
-    ship:apartment "12"^^xsd:string; 
-    ship:postal "3029"^^xsd:string; 
-    ship:city "Madrid"^^xsd:string. 
-
-ship:Price a ship:Price; 
-    ship:amount "12";
-    ship:inCurrency Euro.
-
-cur:Euro a cur:Currency. 
->>>>>>> f76511f1832d1af5a58707fcd17335a0da3b7cd2
