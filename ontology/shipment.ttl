@@ -12,14 +12,28 @@
 @base <https://auroral.iot.linkeddata.es/def/shipment#> .
 
 <https://auroral.iot.linkeddata.es/def/shipment#> rdf:type owl:Ontology ;
-                                                   dc:description "Ontology code created by Chowlk" .
+                                                   dc:creator "Ahlem Rhayem" ,
+                                                              "Andrea Cimmino" ,
+                                                              "Juan Cano" ,
+                                                              "María Poveda-Villalón" ,
+                                                              "Raúl García Castro" ;
+                                                   dc:description "This ontology aims at modelling the logistic domain for the AURORAL project." ;
+                                                   <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/elements/1.1/description
 dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -33,24 +47,9 @@ geo:location rdf:type owl:ObjectProperty ;
              rdfs:label "location" .
 
 
-###  https://auroral.iot.linkeddata.es/def/shipment#address
-ship:address rdf:type owl:ObjectProperty ;
-             rdfs:domain ship:Address ,
-                         ship:Company ;
-             rdfs:range ship:Address .
-
-
-###  https://auroral.iot.linkeddata.es/def/shipment#belongsTO
-ship:belongsTO rdf:type owl:ObjectProperty ;
-               rdfs:domain ship:Sender ;
-               rdfs:range ship:Company ;
-               rdfs:label "belongs to" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/shipment#belongsTo
 ship:belongsTo rdf:type owl:ObjectProperty ;
-               rdfs:domain core:User ;
-               rdfs:range ship:Company ;
+               rdfs:range ship:LogisticCompany ;
                rdfs:label "belongs to" .
 
 
@@ -59,6 +58,11 @@ ship:deliveryTime rdf:type owl:ObjectProperty ;
                   rdfs:domain ship:Shipment ;
                   rdfs:range ship:Time ;
                   rdfs:label "delivery time" .
+
+
+###  https://auroral.iot.linkeddata.es/def/shipment#hasAddress
+ship:hasAddress rdf:type owl:ObjectProperty ;
+                rdfs:range ship:Address .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#hasBuyerPrice
@@ -218,11 +222,6 @@ geo:long rdf:type owl:DatatypeProperty ;
          rdfs:label "long" .
 
 
-###  https://auroral.iot.linkeddata.es/def/shipment#address
-ship:address rdf:type owl:DatatypeProperty ;
-             rdfs:range xsd:string .
-
-
 ###  https://auroral.iot.linkeddata.es/def/shipment#amount
 ship:amount rdf:type owl:DatatypeProperty ;
             rdfs:domain ship:Price ;
@@ -244,13 +243,13 @@ ship:city rdf:type owl:DatatypeProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#companyName
 ship:companyName rdf:type owl:DatatypeProperty ;
-                 rdfs:domain ship:Company ;
+                 rdfs:domain ship:LogisticCompany ;
                  rdfs:range xsd:string .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#companyType
 ship:companyType rdf:type owl:DatatypeProperty ;
-                 rdfs:domain ship:Company ;
+                 rdfs:domain ship:LogisticCompany ;
                  rdfs:range xsd:string .
 
 
@@ -271,8 +270,7 @@ ship:currentAmount rdf:type owl:DatatypeProperty ;
 ###  https://auroral.iot.linkeddata.es/def/shipment#dateStart
 ship:dateStart rdf:type owl:DatatypeProperty ;
                rdfs:domain ship:Time ;
-               rdfs:range xsd:dateTime ,
-                          owl:rational ;
+               rdfs:range xsd:dateTime ;
                rdfs:label "date start" .
 
 
@@ -284,7 +282,7 @@ ship:dateStop rdf:type owl:DatatypeProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#days
 ship:days rdf:type owl:DatatypeProperty ;
-          rdfs:domain ship:Company ;
+          rdfs:domain ship:LogisticCompany ;
           rdfs:range xsd:string .
 
 
@@ -297,9 +295,14 @@ ship:descriptionDocumentType rdf:type owl:DatatypeProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#email
 ship:email rdf:type owl:DatatypeProperty ;
-           rdfs:domain ship:Company ;
+           rdfs:domain ship:LogisticCompany ;
            rdfs:range xsd:string ;
            rdfs:label "email" .
+
+
+###  https://auroral.iot.linkeddata.es/def/shipment#hasAddress
+ship:hasAddress rdf:type owl:DatatypeProperty ;
+                rdfs:range xsd:string .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#hasType
@@ -358,7 +361,7 @@ ship:numberActiveProducer rdf:type owl:DatatypeProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#phone
 ship:phone rdf:type owl:DatatypeProperty ;
-           rdfs:domain ship:Company ;
+           rdfs:domain ship:LogisticCompany ;
            rdfs:range xsd:string .
 
 
@@ -404,7 +407,7 @@ ship:totalAmount rdf:type owl:DatatypeProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#uuidCompany
 ship:uuidCompany rdf:type owl:DatatypeProperty ;
-                 rdfs:domain ship:Company ;
+                 rdfs:domain ship:LogisticCompany ;
                  rdfs:range xsd:string ;
                  rdfs:label "uuid company" .
 
@@ -467,7 +470,7 @@ ship:uuidTrans rdf:type owl:DatatypeProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#webSite
 ship:webSite rdf:type owl:DatatypeProperty ;
-             rdfs:domain ship:Company ;
+             rdfs:domain ship:LogisticCompany ;
              rdfs:range xsd:anyURI ;
              rdfs:label "web site" .
 
@@ -524,24 +527,6 @@ ship:BuyerPrice rdf:type owl:Class ;
                 rdfs:subClassOf ship:Price .
 
 
-###  https://auroral.iot.linkeddata.es/def/shipment#Company
-ship:Company rdf:type owl:Class ;
-             rdfs:subClassOf core:Organization ;
-             rdfs:label "Company" .
-
-
-###  https://auroral.iot.linkeddata.es/def/shipment#DeliveryAddress
-ship:DeliveryAddress rdf:type owl:Class ;
-                     rdfs:subClassOf ship:Address ;
-                     rdfs:label "Delivery Address" .
-
-
-###  https://auroral.iot.linkeddata.es/def/shipment#DeliveryTime
-ship:DeliveryTime rdf:type owl:Class ;
-                  rdfs:subClassOf ship:Time ;
-                  rdfs:label "Delivery Time" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/shipment#Document
 ship:Document rdf:type owl:Class ;
               rdfs:label "Document" .
@@ -553,16 +538,10 @@ ship:DocumentType rdf:type owl:Class ;
                   rdfs:label "Document Type" .
 
 
-###  https://auroral.iot.linkeddata.es/def/shipment#PickupAddress
-ship:PickupAddress rdf:type owl:Class ;
-                   rdfs:subClassOf ship:Address ;
-                   rdfs:label "Pickup Address" .
-
-
-###  https://auroral.iot.linkeddata.es/def/shipment#PickupTime
-ship:PickupTime rdf:type owl:Class ;
-                rdfs:subClassOf ship:Time ;
-                rdfs:label "Pickup Time" .
+###  https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany
+ship:LogisticCompany rdf:type owl:Class ;
+                     rdfs:subClassOf core:Organization ;
+                     rdfs:label "Logistic Company" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#Price
