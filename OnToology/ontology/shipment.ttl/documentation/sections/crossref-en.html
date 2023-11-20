@@ -18,26 +18,12 @@ This section provides details for each class and property defined by [Ontology N
             title="https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity">Bought Quantity</a>
       </li>
       <li>
-         <a href="#BuyerPrice"
-            title="https://auroral.iot.linkeddata.es/def/shipment#BuyerPrice">
-            <span>buyer price</span>
-         </a>
+         <a href="#Currency"
+            title="https://auroral.iot.linkeddata.es/def/shipment#Currency">Currency</a>
       </li>
       <li>
-         <a href="#Company"
-            title="https://auroral.iot.linkeddata.es/def/shipment#Company">Company</a>
-      </li>
-      <li>
-         <a href="#http://publications.europa.eu/resource/authority/currency/Currency"
-            title="http://publications.europa.eu/resource/authority/currency/Currency">Currency</a>
-      </li>
-      <li>
-         <a href="#DeliveryAddress"
-            title="https://auroral.iot.linkeddata.es/def/shipment#DeliveryAddress">Delivery Address</a>
-      </li>
-      <li>
-         <a href="#DeliveryTime"
-            title="https://auroral.iot.linkeddata.es/def/shipment#DeliveryTime">Delivery Time</a>
+         <a href="#DeliveryPickupTime"
+            title="https://auroral.iot.linkeddata.es/def/shipment#DeliveryPickupTime">Delivery Pickup Time</a>
       </li>
       <li>
          <a href="#Document"
@@ -48,16 +34,8 @@ This section provides details for each class and property defined by [Ontology N
             title="https://auroral.iot.linkeddata.es/def/shipment#DocumentType">Document Type</a>
       </li>
       <li>
-         <a href="#https://auroral.iot.linkeddata.es/def/core#Organization"
-            title="https://auroral.iot.linkeddata.es/def/core#Organization">Organization</a>
-      </li>
-      <li>
-         <a href="#PickupAddress"
-            title="https://auroral.iot.linkeddata.es/def/shipment#PickupAddress">Pickup Address</a>
-      </li>
-      <li>
-         <a href="#PickupTime"
-            title="https://auroral.iot.linkeddata.es/def/shipment#PickupTime">Pickup Time</a>
+         <a href="#LogisticCompany"
+            title="https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany">Logistic Company</a>
       </li>
       <li>
          <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">Point</a>
@@ -72,21 +50,11 @@ This section provides details for each class and property defined by [Ontology N
       </li>
       <li>
          <a href="#Receiver"
-            title="https://auroral.iot.linkeddata.es/def/shipment#Receiver">
-            <span>receiver</span>
-         </a>
-      </li>
-      <li>
-         <a href="#SellingPrice"
-            title="https://auroral.iot.linkeddata.es/def/shipment#SellingPrice">
-            <span>selling price</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/shipment#Receiver">Receiver</a>
       </li>
       <li>
          <a href="#Sender"
-            title="https://auroral.iot.linkeddata.es/def/shipment#Sender">
-            <span>sender</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/shipment#Sender">Sender</a>
       </li>
       <li>
          <a href="#Shipment"
@@ -105,10 +73,6 @@ This section provides details for each class and property defined by [Ontology N
             title="https://auroral.iot.linkeddata.es/def/shipment#StoragePile">Storage Pile</a>
       </li>
       <li>
-         <a href="#Time"
-            title="https://auroral.iot.linkeddata.es/def/shipment#Time">Time</a>
-      </li>
-      <li>
          <a href="#Transportation"
             title="https://auroral.iot.linkeddata.es/def/shipment#Transportation">Transportation</a>
       </li>
@@ -124,19 +88,11 @@ This section provides details for each class and property defined by [Ontology N
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#Address</p>
       <dl class="description">
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#DeliveryAddress"
-               title="https://auroral.iot.linkeddata.es/def/shipment#DeliveryAddress">Delivery Address</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PickupAddress"
-               title="https://auroral.iot.linkeddata.es/def/shipment#PickupAddress">Pickup Address</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#address"
                title="https://auroral.iot.linkeddata.es/def/shipment#address">address</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#apartement"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#apartement"
                title="https://auroral.iot.linkeddata.es/def/shipment#apartement">apartement</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#city"
                title="https://auroral.iot.linkeddata.es/def/shipment#city">city</a>
@@ -146,8 +102,8 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#address"
-               title="https://auroral.iot.linkeddata.es/def/shipment#address">address</a>
+            <a href="#hasAddress"
+               title="https://auroral.iot.linkeddata.es/def/shipment#hasAddress">has address</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasDeliveryAddress"
                title="https://auroral.iot.linkeddata.es/def/shipment#hasDeliveryAddress">has delivery address</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasPickupAddress"
@@ -194,73 +150,13 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
-   <div class="entity" id="BuyerPrice">
-      <h3>buyer price<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#BuyerPrice</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#Price"
-               title="https://auroral.iot.linkeddata.es/def/shipment#Price">Price</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Company">
-      <h3>Company<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#Company</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#https://auroral.iot.linkeddata.es/def/core#Organization"
-               title="https://auroral.iot.linkeddata.es/def/core#Organization">Organization</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#address"
-               title="https://auroral.iot.linkeddata.es/def/shipment#address">address</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#companyName"
-               title="https://auroral.iot.linkeddata.es/def/shipment#companyName">company name</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#companyType"
-               title="https://auroral.iot.linkeddata.es/def/shipment#companyType">company type</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#days"
-               title="https://auroral.iot.linkeddata.es/def/shipment#days">days</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#email"
-               title="https://auroral.iot.linkeddata.es/def/shipment#email">email</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#phone"
-               title="https://auroral.iot.linkeddata.es/def/shipment#phone">phone</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#uuidCompany"
-               title="https://auroral.iot.linkeddata.es/def/shipment#uuidCompany">uuid company</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#webSite"
-               title="https://auroral.iot.linkeddata.es/def/shipment#webSite">web site</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#belongsTO"
-               title="https://auroral.iot.linkeddata.es/def/shipment#belongsTO">belongs to</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#belongsTo"
-               title="https://auroral.iot.linkeddata.es/def/shipment#belongsTo">belongs to</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://publications.europa.eu/resource/authority/currency/Currency">
+   <div class="entity" id="Currency">
       <h3>Currency<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://publications.europa.eu/resource/authority/currency/Currency</p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#Currency</p>
       <dl class="description">
          <dt>is in range of</dt>
          <dd>
@@ -270,35 +166,29 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
-   <div class="entity" id="DeliveryAddress">
-      <h3>Delivery Address<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="DeliveryPickupTime">
+      <h3>Delivery Pickup Time<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#DeliveryAddress</p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#DeliveryPickupTime</p>
       <dl class="description">
-         <dt>has super-classes</dt>
+         <dt>is in domain of</dt>
          <dd>
-            <a href="#Address"
-               title="https://auroral.iot.linkeddata.es/def/shipment#Address">Address</a>
-            <sup class="type-c" title="class">c</sup>
+            <a href="#dateStart"
+               title="https://auroral.iot.linkeddata.es/def/shipment#dateStart">date start</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#dateStop"
+               title="https://auroral.iot.linkeddata.es/def/shipment#dateStop">date stop</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
-      </dl>
-   </div>
-   <div class="entity" id="DeliveryTime">
-      <h3>Delivery Time<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#DeliveryTime</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
+         <dt>is in range of</dt>
          <dd>
-            <a href="#Time"
-               title="https://auroral.iot.linkeddata.es/def/shipment#Time">Time</a>
-            <sup class="type-c" title="class">c</sup>
+            <a href="#deliveryTime"
+               title="https://auroral.iot.linkeddata.es/def/shipment#deliveryTime">delivery time</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#pickupTime"
+               title="https://auroral.iot.linkeddata.es/def/shipment#pickupTime">pickup time</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -318,9 +208,7 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hasType"
-               title="https://auroral.iot.linkeddata.es/def/shipment#hasType">has type</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#mimeType"
+            <a href="#mimeType"
                title="https://auroral.iot.linkeddata.es/def/shipment#mimeType">mime type</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#remoteAddress"
                title="https://auroral.iot.linkeddata.es/def/shipment#remoteAddress">remote address</a>
@@ -360,59 +248,41 @@ This section provides details for each class and property defined by [Ontology N
                title="https://auroral.iot.linkeddata.es/def/shipment#uuidDocumentType">uuid document type</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LogisticCompany">
+      <h3>Logistic Company<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#companyName"
+               title="https://auroral.iot.linkeddata.es/def/shipment#companyName">company name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#companyType"
+               title="https://auroral.iot.linkeddata.es/def/shipment#companyType">company type</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#days"
+               title="https://auroral.iot.linkeddata.es/def/shipment#days">days</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#email"
+               title="https://auroral.iot.linkeddata.es/def/shipment#email">email</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasAddress"
+               title="https://auroral.iot.linkeddata.es/def/shipment#hasAddress">has address</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#phone"
+               title="https://auroral.iot.linkeddata.es/def/shipment#phone">phone</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#uuidCompany"
+               title="https://auroral.iot.linkeddata.es/def/shipment#uuidCompany">uuid company</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#webSite"
+               title="https://auroral.iot.linkeddata.es/def/shipment#webSite">web site</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasType"
-               title="https://auroral.iot.linkeddata.es/def/shipment#hasType">has type</a>
+            <a href="#belongsTo"
+               title="https://auroral.iot.linkeddata.es/def/shipment#belongsTo">belongs to</a>
             <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="https://auroral.iot.linkeddata.es/def/core#Organization">
-      <h3>Organization<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#Organization</p>
-      <dl class="description">
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#Company"
-               title="https://auroral.iot.linkeddata.es/def/shipment#Company">Company</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="PickupAddress">
-      <h3>Pickup Address<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#PickupAddress</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#Address"
-               title="https://auroral.iot.linkeddata.es/def/shipment#Address">Address</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="PickupTime">
-      <h3>Pickup Time<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#PickupTime</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#Time"
-               title="https://auroral.iot.linkeddata.es/def/shipment#Time">Time</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -426,8 +296,8 @@ This section provides details for each class and property defined by [Ontology N
       <dl class="description">
          <dt>is in range of</dt>
          <dd>
-            <a href="#has"
-               title="https://auroral.iot.linkeddata.es/def/shipment#has">has</a>
+            <a href="#hasDestination"
+               title="https://auroral.iot.linkeddata.es/def/shipment#hasDestination">has destination</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasOrigin"
                title="https://auroral.iot.linkeddata.es/def/shipment#hasOrigin">has origin</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#location" title="http://www.w3.org/2003/01/geo/wgs84_pos#location">location</a>
@@ -443,14 +313,6 @@ This section provides details for each class and property defined by [Ontology N
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#Price</p>
       <dl class="description">
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#BuyerPrice"
-               title="https://auroral.iot.linkeddata.es/def/shipment#BuyerPrice">buyer price</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#SellingPrice"
-               title="https://auroral.iot.linkeddata.es/def/shipment#SellingPrice">selling price</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#amount"
@@ -462,7 +324,7 @@ This section provides details for each class and property defined by [Ontology N
          <dt>is in range of</dt>
          <dd>
             <a href="#hasBuyerPrice"
-               title="https://auroral.iot.linkeddata.es/def/shipment#hasBuyerPrice">has Buyer Price</a>
+               title="https://auroral.iot.linkeddata.es/def/shipment#hasBuyerPrice">has buyer price</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasSellingPrice"
                title="https://auroral.iot.linkeddata.es/def/shipment#hasSellingPrice">has selling price</a>
             <sup class="type-op" title="object property">op</sup>
@@ -508,7 +370,7 @@ This section provides details for each class and property defined by [Ontology N
       </dl>
    </div>
    <div class="entity" id="Receiver">
-      <h3>receiver<sup class="type-c" title="class">c</sup>
+      <h3>Receiver<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -523,29 +385,13 @@ This section provides details for each class and property defined by [Ontology N
          <dt>is in domain of</dt>
          <dd>
             <a href="#numberActiveBuyer"
-               title="https://auroral.iot.linkeddata.es/def/shipment#numberActiveBuyer">number of active buyer</a>
+               title="https://auroral.iot.linkeddata.es/def/shipment#numberActiveBuyer">number active buyer</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="SellingPrice">
-      <h3>selling price<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#SellingPrice</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#Price"
-               title="https://auroral.iot.linkeddata.es/def/shipment#Price">Price</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="Sender">
-      <h3>sender<sup class="type-c" title="class">c</sup>
+      <h3>Sender<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -559,11 +405,13 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#belongsTO"
-               title="https://auroral.iot.linkeddata.es/def/shipment#belongsTO">belongs to</a>
+            <a href="#belongsTo"
+               title="https://auroral.iot.linkeddata.es/def/shipment#belongsTo">belongs to</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#numberActiveProducer"
-               title="https://auroral.iot.linkeddata.es/def/shipment#numberActiveProducer">number of active producer</a>
-            <sup class="type-dp" title="data property">dp</sup>
+               title="https://auroral.iot.linkeddata.es/def/shipment#numberActiveProducer">number active producer</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#updates"
+               title="https://auroral.iot.linkeddata.es/def/shipment#updates">updates</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -582,7 +430,7 @@ This section provides details for each class and property defined by [Ontology N
             <sup class="type-dp" title="data property">dp</sup>, <a href="#deliveryTime"
                title="https://auroral.iot.linkeddata.es/def/shipment#deliveryTime">delivery time</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasBuyerPrice"
-               title="https://auroral.iot.linkeddata.es/def/shipment#hasBuyerPrice">has Buyer Price</a>
+               title="https://auroral.iot.linkeddata.es/def/shipment#hasBuyerPrice">has buyer price</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasDeliveryAddress"
                title="https://auroral.iot.linkeddata.es/def/shipment#hasDeliveryAddress">has delivery address</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasPickupAddress"
@@ -591,12 +439,24 @@ This section provides details for each class and property defined by [Ontology N
                title="https://auroral.iot.linkeddata.es/def/shipment#hasSellingPrice">has selling price</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasUpdate"
                title="https://auroral.iot.linkeddata.es/def/shipment#hasUpdate">has update</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#pickupTime"
+            <sup class="type-op" title="object property">op</sup>, <a href="#height"
+               title="https://auroral.iot.linkeddata.es/def/shipment#height">height</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#orderDescription"
+               title="https://auroral.iot.linkeddata.es/def/shipment#orderDescription">order description</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#orderInfo"
+               title="https://auroral.iot.linkeddata.es/def/shipment#orderInfo">order info</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#personCount"
+               title="https://auroral.iot.linkeddata.es/def/shipment#personCount">person count</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#pickupTime"
                title="https://auroral.iot.linkeddata.es/def/shipment#pickupTime">pickup time</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#stretch"
-               title="https://auroral.iot.linkeddata.es/def/shipment#stretch">stretch</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#ship"
+               title="https://auroral.iot.linkeddata.es/def/shipment#ship">ship</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#uuidShip"
                title="https://auroral.iot.linkeddata.es/def/shipment#uuidShip">uuid ship</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#weight"
+               title="https://auroral.iot.linkeddata.es/def/shipment#weight">weight</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#width"
+               title="https://auroral.iot.linkeddata.es/def/shipment#width">width</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
@@ -619,15 +479,15 @@ This section provides details for each class and property defined by [Ontology N
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#has"
-               title="https://auroral.iot.linkeddata.es/def/shipment#has">has</a>
+            <a href="#hasDestination"
+               title="https://auroral.iot.linkeddata.es/def/shipment#hasDestination">has destination</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasDocument"
                title="https://auroral.iot.linkeddata.es/def/shipment#hasDocument">has document</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasOrigin"
                title="https://auroral.iot.linkeddata.es/def/shipment#hasOrigin">has origin</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasType"
                title="https://auroral.iot.linkeddata.es/def/shipment#hasType">has type</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#inTransportation"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#inTransportation"
                title="https://auroral.iot.linkeddata.es/def/shipment#inTransportation">in transportation</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isParentOf"
                title="https://auroral.iot.linkeddata.es/def/shipment#isParentOf">is parent of</a>
@@ -641,7 +501,9 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#isParentOf"
+            <a href="#hasUpdate"
+               title="https://auroral.iot.linkeddata.es/def/shipment#hasUpdate">has update</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isParentOf"
                title="https://auroral.iot.linkeddata.es/def/shipment#isParentOf">is parent of</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#updates"
                title="https://auroral.iot.linkeddata.es/def/shipment#updates">updates</a>
@@ -696,40 +558,6 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Time">
-      <h3>Time<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#Time</p>
-      <dl class="description">
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#DeliveryTime"
-               title="https://auroral.iot.linkeddata.es/def/shipment#DeliveryTime">Delivery Time</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PickupTime"
-               title="https://auroral.iot.linkeddata.es/def/shipment#PickupTime">Pickup Time</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#dateStart"
-               title="https://auroral.iot.linkeddata.es/def/shipment#dateStart">date start</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#dateStop"
-               title="https://auroral.iot.linkeddata.es/def/shipment#dateStop">date stop</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#deliveryTime"
-               title="https://auroral.iot.linkeddata.es/def/shipment#deliveryTime">delivery time</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#pickupTime"
-               title="https://auroral.iot.linkeddata.es/def/shipment#pickupTime">pickup time</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="Transportation">
       <h3>Transportation<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -773,21 +601,17 @@ This section provides details for each class and property defined by [Ontology N
          <dt>has sub-classes</dt>
          <dd>
             <a href="#Receiver"
-               title="https://auroral.iot.linkeddata.es/def/shipment#Receiver">receiver</a>
+               title="https://auroral.iot.linkeddata.es/def/shipment#Receiver">Receiver</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Sender"
-               title="https://auroral.iot.linkeddata.es/def/shipment#Sender">sender</a>
+               title="https://auroral.iot.linkeddata.es/def/shipment#Sender">Sender</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#belongsTo"
-               title="https://auroral.iot.linkeddata.es/def/shipment#belongsTo">belongs to</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#provides"
+            <a href="#provides"
                title="https://auroral.iot.linkeddata.es/def/shipment#provides">provides</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#receives"
                title="https://auroral.iot.linkeddata.es/def/shipment#receives">receives</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#updates"
-               title="https://auroral.iot.linkeddata.es/def/shipment#updates">updates</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -798,16 +622,6 @@ This section provides details for each class and property defined by [Ontology N
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#address"
-            title="https://auroral.iot.linkeddata.es/def/shipment#address">
-            <span>address</span>
-         </a>
-      </li>
-      <li>
-         <a href="#belongsTO"
-            title="https://auroral.iot.linkeddata.es/def/shipment#belongsTO">belongs to</a>
-      </li>
-      <li>
          <a href="#belongsTo"
             title="https://auroral.iot.linkeddata.es/def/shipment#belongsTo">belongs to</a>
       </li>
@@ -816,16 +630,20 @@ This section provides details for each class and property defined by [Ontology N
             title="https://auroral.iot.linkeddata.es/def/shipment#deliveryTime">delivery time</a>
       </li>
       <li>
-         <a href="#has"
-            title="https://auroral.iot.linkeddata.es/def/shipment#has">has</a>
+         <a href="#hasAddress"
+            title="https://auroral.iot.linkeddata.es/def/shipment#hasAddress">has address</a>
       </li>
       <li>
          <a href="#hasBuyerPrice"
-            title="https://auroral.iot.linkeddata.es/def/shipment#hasBuyerPrice">has Buyer Price</a>
+            title="https://auroral.iot.linkeddata.es/def/shipment#hasBuyerPrice">has buyer price</a>
       </li>
       <li>
          <a href="#hasDeliveryAddress"
             title="https://auroral.iot.linkeddata.es/def/shipment#hasDeliveryAddress">has delivery address</a>
+      </li>
+      <li>
+         <a href="#hasDestination"
+            title="https://auroral.iot.linkeddata.es/def/shipment#hasDestination">has destination</a>
       </li>
       <li>
          <a href="#hasDocument"
@@ -846,12 +664,6 @@ This section provides details for each class and property defined by [Ontology N
       <li>
          <a href="#hasSellingPrice"
             title="https://auroral.iot.linkeddata.es/def/shipment#hasSellingPrice">has selling price</a>
-      </li>
-      <li>
-         <a href="#hasType"
-            title="https://auroral.iot.linkeddata.es/def/shipment#hasType">
-            <span>has type</span>
-         </a>
       </li>
       <li>
          <a href="#hasUpdate"
@@ -886,15 +698,11 @@ This section provides details for each class and property defined by [Ontology N
       </li>
       <li>
          <a href="#quantity"
-            title="https://auroral.iot.linkeddata.es/def/shipment#quantity">
-            <span>quantity</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/shipment#quantity">quantity</a>
       </li>
       <li>
          <a href="#quantityInShipment"
-            title="https://auroral.iot.linkeddata.es/def/shipment#quantityInShipment">
-            <span>quantity in shipment</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/shipment#quantityInShipment">quantity in shipment</a>
       </li>
       <li>
          <a href="#receives"
@@ -909,63 +717,6 @@ This section provides details for each class and property defined by [Ontology N
             title="https://auroral.iot.linkeddata.es/def/shipment#updates">updates</a>
       </li>
    </ul>
-   <div class="entity" id="address">
-      <h3>address<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#address</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Address"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Address">Address</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#Company"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Company">Company</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Address"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Address">Address</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#address">data property</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="belongsTO">
-      <h3>belongs to<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#belongsTO</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Sender"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Sender">sender</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Company"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Company">Company</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="belongsTo">
       <h3>belongs to<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -977,13 +728,14 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://auroral.iot.linkeddata.es/def/core#User" title="https://auroral.iot.linkeddata.es/def/core#User">User</a>
+               <a href="#Sender"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#Sender">Sender</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Company"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Company">Company</a>
+               <a href="#LogisticCompany"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany">Logistic Company</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1006,38 +758,39 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Time"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Time">Time</a>
+               <a href="#DeliveryPickupTime"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#DeliveryPickupTime">Delivery Pickup Time</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="has">
-      <h3>has<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="hasAddress">
+      <h3>has address<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#has</p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#hasAddress</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#ShipmentUpdate"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#ShipmentUpdate">Shipment Update</a>
+               <a href="#LogisticCompany"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany">Logistic Company</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">Point</a>
+               <a href="#Address"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#Address">Address</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="hasBuyerPrice">
-      <h3>has Buyer Price<sup class="type-op" title="object property">op</sup>
+      <h3>has buyer price<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -1079,6 +832,29 @@ This section provides details for each class and property defined by [Ontology N
             <dd>
                <a href="#Address"
                   title="https://auroral.iot.linkeddata.es/def/shipment#Address">Address</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDestination">
+      <h3>has destination<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#hasDestination</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ShipmentUpdate"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#ShipmentUpdate">Shipment Update</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">Point</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1203,39 +979,6 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasType">
-      <h3>has type<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#hasType</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Document"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Document">Document</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#ShipmentUpdate"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#ShipmentUpdate">Shipment Update</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#DocumentType"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#DocumentType">Document Type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#hasType">data property</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="hasUpdate">
       <h3>has update<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1249,6 +992,12 @@ This section provides details for each class and property defined by [Ontology N
             <dd>
                <a href="#Shipment"
                   title="https://auroral.iot.linkeddata.es/def/shipment#Shipment">Shipment</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ShipmentUpdate"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#ShipmentUpdate">Shipment Update</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1271,8 +1020,8 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://publications.europa.eu/resource/authority/currency/Currency"
-                  title="http://publications.europa.eu/resource/authority/currency/Currency">Currency</a>
+               <a href="#Currency"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#Currency">Currency</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1390,8 +1139,8 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Time"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Time">Time</a>
+               <a href="#DeliveryPickupTime"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#DeliveryPickupTime">Delivery Pickup Time</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1526,7 +1275,8 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://auroral.iot.linkeddata.es/def/core#User" title="https://auroral.iot.linkeddata.es/def/core#User">User</a>
+               <a href="#Sender"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#Sender">Sender</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1545,9 +1295,7 @@ This section provides details for each class and property defined by [Ontology N
    <ul class="hlist">
       <li>
          <a href="#address"
-            title="https://auroral.iot.linkeddata.es/def/shipment#address">
-            <span>address</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/shipment#address">address</a>
       </li>
       <li>
          <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#alt" title="http://www.w3.org/2003/01/geo/wgs84_pos#alt">alt</a>
@@ -1558,27 +1306,19 @@ This section provides details for each class and property defined by [Ontology N
       </li>
       <li>
          <a href="#apartement"
-            title="https://auroral.iot.linkeddata.es/def/shipment#apartement">
-            <span>apartement</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/shipment#apartement">apartement</a>
       </li>
       <li>
          <a href="#city"
-            title="https://auroral.iot.linkeddata.es/def/shipment#city">
-            <span>city</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/shipment#city">city</a>
       </li>
       <li>
          <a href="#companyName"
-            title="https://auroral.iot.linkeddata.es/def/shipment#companyName">
-            <span>company name</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/shipment#companyName">company name</a>
       </li>
       <li>
          <a href="#companyType"
-            title="https://auroral.iot.linkeddata.es/def/shipment#companyType">
-            <span>company type</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/shipment#companyType">company type</a>
       </li>
       <li>
          <a href="#createdTime"
@@ -1594,15 +1334,11 @@ This section provides details for each class and property defined by [Ontology N
       </li>
       <li>
          <a href="#dateStop"
-            title="https://auroral.iot.linkeddata.es/def/shipment#dateStop">
-            <span>date stop</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/shipment#dateStop">date stop</a>
       </li>
       <li>
          <a href="#days"
-            title="https://auroral.iot.linkeddata.es/def/shipment#days">
-            <span>days</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/shipment#days">days</a>
       </li>
       <li>
          <a href="#descriptionDocumentType"
@@ -1614,9 +1350,11 @@ This section provides details for each class and property defined by [Ontology N
       </li>
       <li>
          <a href="#hasType"
-            title="https://auroral.iot.linkeddata.es/def/shipment#hasType">
-            <span>has type</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/shipment#hasType">has type</a>
+      </li>
+      <li>
+         <a href="#height"
+            title="https://auroral.iot.linkeddata.es/def/shipment#height">height</a>
       </li>
       <li>
          <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#lat" title="http://www.w3.org/2003/01/geo/wgs84_pos#lat">lat</a>
@@ -1646,33 +1384,39 @@ This section provides details for each class and property defined by [Ontology N
       </li>
       <li>
          <a href="#numberActiveBuyer"
-            title="https://auroral.iot.linkeddata.es/def/shipment#numberActiveBuyer">number of active buyer</a>
+            title="https://auroral.iot.linkeddata.es/def/shipment#numberActiveBuyer">number active buyer</a>
       </li>
       <li>
          <a href="#numberActiveProducer"
-            title="https://auroral.iot.linkeddata.es/def/shipment#numberActiveProducer">number of active producer</a>
+            title="https://auroral.iot.linkeddata.es/def/shipment#numberActiveProducer">number active producer</a>
+      </li>
+      <li>
+         <a href="#orderDescription"
+            title="https://auroral.iot.linkeddata.es/def/shipment#orderDescription">order description</a>
+      </li>
+      <li>
+         <a href="#orderInfo"
+            title="https://auroral.iot.linkeddata.es/def/shipment#orderInfo">order info</a>
+      </li>
+      <li>
+         <a href="#personCount"
+            title="https://auroral.iot.linkeddata.es/def/shipment#personCount">person count</a>
       </li>
       <li>
          <a href="#phone"
-            title="https://auroral.iot.linkeddata.es/def/shipment#phone">
-            <span>phone</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/shipment#phone">phone</a>
       </li>
       <li>
          <a href="#postal"
-            title="https://auroral.iot.linkeddata.es/def/shipment#postal">
-            <span>postal</span>
-         </a>
+            title="https://auroral.iot.linkeddata.es/def/shipment#postal">postal</a>
       </li>
       <li>
          <a href="#remoteAddress"
             title="https://auroral.iot.linkeddata.es/def/shipment#remoteAddress">remote address</a>
       </li>
       <li>
-         <a href="#stretch"
-            title="https://auroral.iot.linkeddata.es/def/shipment#stretch">
-            <span>stretch</span>
-         </a>
+         <a href="#ship"
+            title="https://auroral.iot.linkeddata.es/def/shipment#ship">ship</a>
       </li>
       <li>
          <a href="#tareKg"
@@ -1727,12 +1471,20 @@ This section provides details for each class and property defined by [Ontology N
             title="https://auroral.iot.linkeddata.es/def/shipment#webSite">web site</a>
       </li>
       <li>
+         <a href="#weight"
+            title="https://auroral.iot.linkeddata.es/def/shipment#weight">weight</a>
+      </li>
+      <li>
+         <a href="#width"
+            title="https://auroral.iot.linkeddata.es/def/shipment#width">width</a>
+      </li>
+      <li>
          <a href="#year"
             title="https://auroral.iot.linkeddata.es/def/shipment#year">year</a>
       </li>
    </ul>
    <div class="entity" id="address">
-      <h3>address<sup class="type-op" title="object property">op</sup>
+      <h3>address<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -1740,15 +1492,17 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#address</p>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Address"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#Address">Address</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>
-               <a href="#address">object property</a>
             </dd>
          </dl>
       </div>
@@ -1844,8 +1598,8 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Company"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Company">Company</a>
+               <a href="#LogisticCompany"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany">Logistic Company</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1868,8 +1622,8 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Company"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Company">Company</a>
+               <a href="#LogisticCompany"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany">Logistic Company</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1940,8 +1694,8 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Time"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Time">Time</a>
+               <a href="#DeliveryPickupTime"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#DeliveryPickupTime">Delivery Pickup Time</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1949,11 +1703,6 @@ This section provides details for each class and property defined by [Ontology N
                <a href="http://www.w3.org/2001/XMLSchema#dateTime"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
-            </dd>
-            <dd>
-               <a href="http://www.w3.org/2002/07/owl#rational"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#rational">rational</a>
             </dd>
          </dl>
       </div>
@@ -1969,8 +1718,8 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Time"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Time">Time</a>
+               <a href="#DeliveryPickupTime"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#DeliveryPickupTime">Delivery Pickup Time</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1993,8 +1742,8 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Company"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Company">Company</a>
+               <a href="#LogisticCompany"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany">Logistic Company</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2041,8 +1790,8 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Company"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Company">Company</a>
+               <a href="#LogisticCompany"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany">Logistic Company</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2055,7 +1804,7 @@ This section provides details for each class and property defined by [Ontology N
       </div>
    </div>
    <div class="entity" id="hasType">
-      <h3>has type<sup class="type-op" title="object property">op</sup>
+      <h3>has type<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -2063,15 +1812,41 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#hasType</p>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ShipmentUpdate"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#ShipmentUpdate">Shipment Update</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
-            <dt>is also defined as</dt>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="height">
+      <h3>height<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#height</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
             <dd>
-               <a href="#hasType">object property</a>
+               <a href="#Shipment"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#Shipment">Shipment</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -2213,7 +1988,7 @@ This section provides details for each class and property defined by [Ontology N
       </div>
    </div>
    <div class="entity" id="numberActiveBuyer">
-      <h3>number of active buyer<sup class="type-dp" title="data property">dp</sup>
+      <h3>number active buyer<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -2224,7 +1999,7 @@ This section provides details for each class and property defined by [Ontology N
             <dt>has domain</dt>
             <dd>
                <a href="#Receiver"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Receiver">receiver</a>
+                  title="https://auroral.iot.linkeddata.es/def/shipment#Receiver">Receiver</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2237,7 +2012,7 @@ This section provides details for each class and property defined by [Ontology N
       </div>
    </div>
    <div class="entity" id="numberActiveProducer">
-      <h3>number of active producer<sup class="type-dp" title="data property">dp</sup>
+      <h3>number active producer<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -2248,7 +2023,79 @@ This section provides details for each class and property defined by [Ontology N
             <dt>has domain</dt>
             <dd>
                <a href="#Sender"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Sender">sender</a>
+                  title="https://auroral.iot.linkeddata.es/def/shipment#Sender">Sender</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="orderDescription">
+      <h3>order description<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#orderDescription</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Shipment"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#Shipment">Shipment</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="orderInfo">
+      <h3>order info<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#orderInfo</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Shipment"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#Shipment">Shipment</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="personCount">
+      <h3>person count<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#personCount</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Shipment"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#Shipment">Shipment</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2271,15 +2118,15 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Company"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Company">Company</a>
+               <a href="#LogisticCompany"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany">Logistic Company</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
                   target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
             </dd>
          </dl>
       </div>
@@ -2332,13 +2179,13 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="stretch">
-      <h3>stretch<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="ship">
+      <h3>ship<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#stretch</p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#ship</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -2346,12 +2193,6 @@ This section provides details for each class and property defined by [Ontology N
                <a href="#Shipment"
                   title="https://auroral.iot.linkeddata.es/def/shipment#Shipment">Shipment</a>
                <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#integer"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
             </dd>
          </dl>
       </div>
@@ -2439,8 +2280,8 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Company"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Company">Company</a>
+               <a href="#LogisticCompany"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany">Logistic Company</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2655,8 +2496,8 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Company"
-                  title="https://auroral.iot.linkeddata.es/def/shipment#Company">Company</a>
+               <a href="#LogisticCompany"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany">Logistic Company</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2664,6 +2505,54 @@ This section provides details for each class and property defined by [Ontology N
                <a href="http://www.w3.org/2001/XMLSchema#anyURI"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#anyURI">anyURI</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="weight">
+      <h3>weight<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#weight</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Shipment"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#Shipment">Shipment</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="width">
+      <h3>width<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/shipment#width</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Shipment"
+                  title="https://auroral.iot.linkeddata.es/def/shipment#Shipment">Shipment</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
