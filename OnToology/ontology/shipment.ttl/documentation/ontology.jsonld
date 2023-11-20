@@ -1,11 +1,11 @@
 [ {
-  "@id" : "http://publications.europa.eu/resource/authority/currency/Currency",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Currency"
-  } ]
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point",
@@ -53,12 +53,6 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Product"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/core#Organization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Organization"
-  } ]
-}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#User",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -67,8 +61,25 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Ontology code created by Chowlk"
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Ahlem Rhayem"
+  }, {
+    "@value" : "Andrea Cimmino"
+  }, {
+    "@value" : "Juan Cano"
+  }, {
+    "@value" : "María Poveda Villalón"
+  }, {
+    "@value" : "Raúl García Castro"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "The AURORAL Logistic Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.0.1"
+  } ],
+  "https://w3id.org/mod#createdWith" : [ {
+    "@id" : "https://chowlk.linkeddata.es/"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Address",
@@ -83,37 +94,16 @@
     "@value" : "Bought Quantity"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#BuyerPrice",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Price"
-  } ]
-}, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Company",
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Currency",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Company"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#Organization"
+    "@value" : "Currency"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#DeliveryAddress",
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#DeliveryPickupTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Delivery Address"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Address"
-  } ]
-}, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#DeliveryTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Delivery Time"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Time"
+    "@value" : "Delivery Pickup Time"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Document",
@@ -131,22 +121,10 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Document"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#PickupAddress",
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Pickup Address"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Address"
-  } ]
-}, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#PickupTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Pickup Time"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Time"
+    "@value" : "Logistic Company"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Price",
@@ -163,18 +141,18 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Receiver",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Receiver"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#User"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#SellingPrice",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Price"
-  } ]
-}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Sender",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sender"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#User"
   } ]
@@ -203,12 +181,6 @@
     "@value" : "Storage Pile"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Time",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Time"
-  } ]
-}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Transportation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -216,15 +188,14 @@
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#address",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Address"
-  }, {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "address"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Address"
-  }, {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
@@ -245,11 +216,14 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Address"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "apartement"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#belongsTO",
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#belongsTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Sender"
@@ -258,25 +232,16 @@
     "@value" : "belongs to"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Company"
-  } ]
-}, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#belongsTo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#User"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "belongs to"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Company"
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#city",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "city"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -285,7 +250,10 @@
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#companyName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Company"
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "company name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -294,7 +262,10 @@
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#companyType",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Company"
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "company type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -327,21 +298,22 @@
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#dateStart",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Time"
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#DeliveryPickupTime"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "date start"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-  }, {
-    "@id" : "http://www.w3.org/2002/07/owl#rational"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#dateStop",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Time"
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#DeliveryPickupTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "date stop"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
@@ -350,7 +322,10 @@
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#days",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Company"
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "days"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -365,7 +340,7 @@
     "@value" : "delivery time"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Time"
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#DeliveryPickupTime"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#descriptionDocumentType",
@@ -383,7 +358,7 @@
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#email",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Company"
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "email"
@@ -392,16 +367,16 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#has",
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#hasAddress",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#ShipmentUpdate"
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has"
+    "@value" : "has address"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point"
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Address"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#hasBuyerPrice",
@@ -410,7 +385,7 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Shipment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has Buyer Price"
+    "@value" : "has buyer price"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Price"
@@ -426,6 +401,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Address"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#hasDestination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#ShipmentUpdate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has destination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#hasDocument",
@@ -489,18 +476,14 @@
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#hasType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Document"
-  }, {
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#ShipmentUpdate"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#DocumentType"
-  }, {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
@@ -511,6 +494,21 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has update"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#ShipmentUpdate"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#height",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Shipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "height"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#inCurrency",
@@ -522,7 +520,7 @@
     "@value" : "in currency"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/currency/Currency"
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Currency"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#inShipment",
@@ -627,7 +625,7 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Receiver"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "number of active buyer"
+    "@value" : "number active buyer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -639,7 +637,43 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Sender"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "number of active producer"
+    "@value" : "number active producer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#orderDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Shipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "order description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#orderInfo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Shipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "order info"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#personCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Shipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "person count"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -648,10 +682,13 @@
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#phone",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Company"
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "phone"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#pickupTime",
@@ -663,13 +700,16 @@
     "@value" : "pickup time"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Time"
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#DeliveryPickupTime"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#postal",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "postal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -692,6 +732,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Product"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "quantity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity"
   } ]
@@ -700,6 +743,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "quantity in shipment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Shipment"
@@ -729,6 +775,15 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#ship",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Shipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ship"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#storedIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -739,15 +794,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Storage"
-  } ]
-}, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#stretch",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Shipment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#tareKg",
@@ -789,7 +835,7 @@
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#updates",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#User"
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Sender"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "updates"
@@ -801,7 +847,7 @@
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#uuidCompany",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Company"
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "uuid company"
@@ -909,13 +955,37 @@
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#webSite",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Company"
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "web site"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#weight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Shipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "weight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#width",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Shipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "width"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/shipment#year",
@@ -929,4 +999,7 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
+}, {
+  "@id" : "https://w3id.org/mod#createdWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 } ]

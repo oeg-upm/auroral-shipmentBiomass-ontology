@@ -5,14 +5,49 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="63" parse.nodes="24" parse.order="free">
-      <node id="nid_ship:Time">
+   <graph edgedefault="directed" id="G" parse.edges="70" parse.nodes="26" parse.order="free">
+      <node id="nid_ship:">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="90.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="50.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">ship:</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+      <node id="nid_https://chowlk.linkeddata.es/">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="290.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://chowlk.linkeddata.es/</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_mod:createdWith0" source="nid_ship:" target="nid_https://chowlk.linkeddata.es/">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">mod:createdWith</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_ship:DeliveryPickupTime">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="230.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">ship:Time</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">ship:DeliveryPickupTime</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
@@ -30,7 +65,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ship:dateStop0" source="nid_ship:Time" target="nid_xsd:dateTime">
+    <edge id="eid_ship:dateStop1" source="nid_ship:DeliveryPickupTime" target="nid_xsd:dateTime">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -65,7 +100,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ship:hasDocument1" source="nid_ship:ShipmentUpdate" target="nid_ship:Document">
+    <edge id="eid_ship:hasDocument2" source="nid_ship:ShipmentUpdate" target="nid_ship:Document">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -76,13 +111,13 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_ship:Company">
+      <node id="nid_ship:LogisticCompany">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="120.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="200.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">ship:Company</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">ship:LogisticCompany</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
@@ -100,7 +135,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ship:companyType2" source="nid_ship:Company" target="nid_xsd:string">
+    <edge id="eid_ship:companyType3" source="nid_ship:LogisticCompany" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -123,35 +158,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ship:webSite3" source="nid_ship:Company" target="nid_xsd:anyURI">
+    <edge id="eid_ship:webSite4" source="nid_ship:LogisticCompany" target="nid_xsd:anyURI">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:webSite</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_geo:Point">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="90.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFA500" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">geo:Point</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_ship:has4" source="nid_ship:ShipmentUpdate" target="nid_geo:Point">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:has</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -169,35 +181,46 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ship:deliveryTime5" source="nid_ship:Shipment" target="nid_ship:Time">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:deliveryTime</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_ship:Sender">
+      <node id="nid_xsd:integer">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="110.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">ship:Sender</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">xsd:integer</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ship:belongsTO6" source="nid_ship:Sender" target="nid_ship:Company">
+    <edge id="eid_ship:personCount5" source="nid_ship:Shipment" target="nid_xsd:integer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:belongsTO</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:personCount</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_ship:weight6" source="nid_ship:Shipment" target="nid_xsd:string">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:weight</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_ship:deliveryTime7" source="nid_ship:Shipment" target="nid_ship:DeliveryPickupTime">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:deliveryTime</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -215,7 +238,18 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ship:city7" source="nid_ship:Address" target="nid_xsd:string">
+    <edge id="eid_ship:hasAddress8" source="nid_ship:LogisticCompany" target="nid_ship:Address">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:hasAddress</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_ship:city9" source="nid_ship:Address" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -238,7 +272,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ship:inShipment8" source="nid_ship:Product" target="nid_ship:Shipment">
+    <edge id="eid_ship:inShipment10" source="nid_ship:Product" target="nid_ship:Shipment">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -273,7 +307,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ship:amount9" source="nid_ship:Price" target="nid_xsd:float">
+    <edge id="eid_ship:amount11" source="nid_ship:Price" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -284,7 +318,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:email10" source="nid_ship:Company" target="nid_xsd:string">
+    <edge id="eid_ship:email12" source="nid_ship:LogisticCompany" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -295,19 +329,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_core:User">
+      <node id="nid_ship:Sender">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="90.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="110.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">core:User</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">ship:Sender</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ship:updates11" source="nid_core:User" target="nid_ship:ShipmentUpdate">
+    <edge id="eid_ship:updates13" source="nid_ship:Sender" target="nid_ship:ShipmentUpdate">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -318,7 +352,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:address12" source="nid_ship:Address" target="nid_ship:Address">
+    <edge id="eid_ship:address14" source="nid_ship:Address" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -329,7 +363,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:dateStart13" source="nid_ship:Time" target="nid_xsd:dateTime">
+    <edge id="eid_ship:dateStart15" source="nid_ship:DeliveryPickupTime" target="nid_xsd:dateTime">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -352,7 +386,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ship:nameDocumentType14" source="nid_ship:DocumentType" target="nid_xsd:string">
+    <edge id="eid_ship:nameDocumentType16" source="nid_ship:DocumentType" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -363,7 +397,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:hasSellingPrice15" source="nid_ship:Shipment" target="nid_ship:Price">
+    <edge id="eid_ship:hasSellingPrice17" source="nid_ship:Shipment" target="nid_ship:Price">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -374,7 +408,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:hasType16" source="nid_ship:Document" target="nid_ship:DocumentType">
+    <edge id="eid_ship:hasType18" source="nid_ship:ShipmentUpdate" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -385,19 +419,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://publications.europa.eu/resource/authority/currency/Currency">
+      <node id="nid_ship:Currency">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="660.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="130.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://publications.europa.eu/resource/authority/currency/Currency</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">ship:Currency</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ship:inCurrency17" source="nid_ship:Price" target="nid_http://publications.europa.eu/resource/authority/currency/Currency">
+    <edge id="eid_ship:inCurrency19" source="nid_ship:Price" target="nid_ship:Currency">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -420,7 +454,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ship:licencePlate18" source="nid_ship:Transportation" target="nid_xsd:string">
+    <edge id="eid_ship:licencePlate20" source="nid_ship:Transportation" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -443,19 +477,7 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_xsd:integer">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="110.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFA500" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">xsd:integer</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_ship:numberActiveBuyer19" source="nid_ship:Receiver" target="nid_xsd:integer">
+    <edge id="eid_ship:numberActiveBuyer21" source="nid_ship:Receiver" target="nid_xsd:integer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -466,18 +488,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:stretch20" source="nid_ship:Shipment" target="nid_xsd:integer">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:stretch</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_ship:belongsTo21" source="nid_core:User" target="nid_ship:Company">
+    <edge id="eid_ship:belongsTo22" source="nid_ship:Sender" target="nid_ship:LogisticCompany">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -488,7 +499,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:createdTime22" source="nid_ship:Shipment" target="nid_xsd:dateTime">
+    <edge id="eid_ship:createdTime23" source="nid_ship:Shipment" target="nid_xsd:dateTime">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -523,7 +534,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ship:hasPile23" source="nid_ship:Storage" target="nid_ship:StoragePile">
+    <edge id="eid_ship:hasPile24" source="nid_ship:Storage" target="nid_ship:StoragePile">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -534,7 +545,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:model24" source="nid_ship:Transportation" target="nid_xsd:string">
+    <edge id="eid_ship:model25" source="nid_ship:Transportation" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -545,7 +556,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:hasBuyerPrice25" source="nid_ship:Shipment" target="nid_ship:Price">
+    <edge id="eid_ship:hasBuyerPrice26" source="nid_ship:Shipment" target="nid_ship:Price">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -556,7 +567,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:uuidProduct26" source="nid_ship:Product" target="nid_xsd:string">
+    <edge id="eid_ship:uuidProduct27" source="nid_ship:Product" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -567,12 +578,68 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:phone27" source="nid_ship:Company" target="nid_xsd:string">
+    <edge id="eid_ship:phone28" source="nid_ship:LogisticCompany" target="nid_xsd:integer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:phone</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_ship:hasUpdate29" source="nid_ship:Shipment" target="nid_ship:ShipmentUpdate">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:hasUpdate</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_ship:uuidShipUpdate30" source="nid_ship:ShipmentUpdate" target="nid_xsd:string">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:uuidShipUpdate</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_geo:Point">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="90.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">geo:Point</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_ship:hasDestination31" source="nid_ship:ShipmentUpdate" target="nid_geo:Point">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:hasDestination</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_ship:days32" source="nid_ship:LogisticCompany" target="nid_xsd:string">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:days</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -590,40 +657,29 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ship:hasUpdate28" source="nid_ship:Shipment" target="nid_owl:Thing">
+    <edge id="eid_ship:ship33" source="nid_ship:Shipment" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:hasUpdate</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:ship</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:uuidShipUpdate29" source="nid_ship:ShipmentUpdate" target="nid_xsd:string">
+    <edge id="eid_ship:height34" source="nid_ship:Shipment" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:uuidShipUpdate</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:height</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:days30" source="nid_ship:Company" target="nid_xsd:string">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:days</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_ship:numberActiveProducer31" source="nid_ship:Sender" target="nid_xsd:integer">
+    <edge id="eid_ship:numberActiveProducer35" source="nid_ship:Sender" target="nid_xsd:integer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -634,7 +690,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:year32" source="nid_ship:Transportation" target="nid_xsd:integer">
+    <edge id="eid_ship:year36" source="nid_ship:Transportation" target="nid_xsd:integer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -645,7 +701,19 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:receives33" source="nid_core:User" target="nid_ship:Product">
+      <node id="nid_core:User">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="90.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">core:User</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_ship:receives37" source="nid_core:User" target="nid_ship:Product">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -656,7 +724,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:uuidTrans34" source="nid_ship:Transportation" target="nid_xsd:string">
+    <edge id="eid_ship:uuidTrans38" source="nid_ship:Transportation" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -667,7 +735,18 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:currentAmount35" source="nid_ship:Product" target="nid_xsd:string">
+    <edge id="eid_ship:orderInfo39" source="nid_ship:Shipment" target="nid_xsd:string">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:orderInfo</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_ship:currentAmount40" source="nid_ship:Product" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -690,7 +769,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ship:quantity36" source="nid_ship:Product" target="nid_ship:BoughtQuantity">
+    <edge id="eid_ship:quantity41" source="nid_ship:Product" target="nid_ship:BoughtQuantity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -701,7 +780,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:postal37" source="nid_ship:Address" target="nid_xsd:string">
+    <edge id="eid_ship:postal42" source="nid_ship:Address" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -712,7 +791,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:pickupTime38" source="nid_ship:Shipment" target="nid_ship:Time">
+    <edge id="eid_ship:pickupTime43" source="nid_ship:Shipment" target="nid_ship:DeliveryPickupTime">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -723,7 +802,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:timeUpdate39" source="nid_ship:ShipmentUpdate" target="nid_xsd:dateTime">
+    <edge id="eid_ship:timeUpdate44" source="nid_ship:ShipmentUpdate" target="nid_xsd:dateTime">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -734,7 +813,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:hasDeliveryAddress40" source="nid_ship:Shipment" target="nid_ship:Address">
+    <edge id="eid_ship:hasDeliveryAddress45" source="nid_ship:Shipment" target="nid_ship:Address">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -745,7 +824,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:isParentOf41" source="nid_ship:ShipmentUpdate" target="nid_ship:ShipmentUpdate">
+    <edge id="eid_ship:isParentOf46" source="nid_ship:ShipmentUpdate" target="nid_ship:ShipmentUpdate">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -756,7 +835,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:uuidPile42" source="nid_ship:StoragePile" target="nid_xsd:string">
+    <edge id="eid_ship:uuidPile47" source="nid_ship:StoragePile" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -767,7 +846,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:hasPickupAddress43" source="nid_ship:Shipment" target="nid_ship:Address">
+    <edge id="eid_ship:hasPickupAddress48" source="nid_ship:Shipment" target="nid_ship:Address">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -778,7 +857,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:uuidCompany44" source="nid_ship:Company" target="nid_xsd:string">
+    <edge id="eid_ship:uuidCompany49" source="nid_ship:LogisticCompany" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -789,7 +868,18 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_geo:location45" source="nid_ship:Storage" target="nid_geo:Point">
+    <edge id="eid_ship:orderDescription50" source="nid_ship:Shipment" target="nid_xsd:string">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:orderDescription</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_geo:location51" source="nid_ship:Storage" target="nid_geo:Point">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -800,7 +890,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:quantityInShipment46" source="nid_ship:BoughtQuantity" target="nid_ship:Shipment">
+    <edge id="eid_ship:quantityInShipment52" source="nid_ship:BoughtQuantity" target="nid_ship:Shipment">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -811,7 +901,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:storedIn47" source="nid_ship:ShipmentUpdate" target="nid_ship:Storage">
+    <edge id="eid_ship:storedIn53" source="nid_ship:ShipmentUpdate" target="nid_ship:Storage">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -822,7 +912,18 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:uuidShip48" source="nid_ship:Shipment" target="nid_xsd:string">
+    <edge id="eid_ship:width54" source="nid_ship:Shipment" target="nid_xsd:string">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">ship:width</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_ship:uuidShip55" source="nid_ship:Shipment" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -833,7 +934,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:companyName49" source="nid_ship:Company" target="nid_xsd:string">
+    <edge id="eid_ship:companyName56" source="nid_ship:LogisticCompany" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -844,7 +945,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:descriptionDocumentType50" source="nid_ship:DocumentType" target="nid_xsd:string">
+    <edge id="eid_ship:descriptionDocumentType57" source="nid_ship:DocumentType" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -855,7 +956,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:uuidDocument51" source="nid_ship:Document" target="nid_xsd:string">
+    <edge id="eid_ship:uuidDocument58" source="nid_ship:Document" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -866,7 +967,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:inTransportation52" source="nid_ship:ShipmentUpdate" target="nid_ship:Transportation">
+    <edge id="eid_ship:inTransportation59" source="nid_ship:ShipmentUpdate" target="nid_ship:Transportation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -877,7 +978,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:remoteAddress53" source="nid_ship:Document" target="nid_xsd:anyURI">
+    <edge id="eid_ship:remoteAddress60" source="nid_ship:Document" target="nid_xsd:anyURI">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -888,7 +989,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:mimeType54" source="nid_ship:Document" target="nid_xsd:string">
+    <edge id="eid_ship:mimeType61" source="nid_ship:Document" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -899,7 +1000,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:tareKg55" source="nid_ship:Transportation" target="nid_xsd:float">
+    <edge id="eid_ship:tareKg62" source="nid_ship:Transportation" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -910,7 +1011,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:hasOrigin56" source="nid_ship:ShipmentUpdate" target="nid_geo:Point">
+    <edge id="eid_ship:hasOrigin63" source="nid_ship:ShipmentUpdate" target="nid_geo:Point">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -921,7 +1022,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:name57" source="nid_ship:Transportation" target="nid_xsd:string">
+    <edge id="eid_ship:name64" source="nid_ship:Transportation" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -932,7 +1033,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:apartement58" source="nid_ship:Address" target="nid_xsd:string">
+    <edge id="eid_ship:apartement65" source="nid_ship:Address" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -943,7 +1044,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:uuidStorage59" source="nid_ship:Storage" target="nid_xsd:string">
+    <edge id="eid_ship:uuidStorage66" source="nid_ship:Storage" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -954,7 +1055,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:provides60" source="nid_core:User" target="nid_ship:Product">
+    <edge id="eid_ship:provides67" source="nid_core:User" target="nid_ship:Product">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -965,7 +1066,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:totalAmount61" source="nid_ship:Product" target="nid_xsd:string">
+    <edge id="eid_ship:totalAmount68" source="nid_ship:Product" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -976,7 +1077,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ship:uuidDocumentType62" source="nid_ship:DocumentType" target="nid_xsd:string">
+    <edge id="eid_ship:uuidDocumentType69" source="nid_ship:DocumentType" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

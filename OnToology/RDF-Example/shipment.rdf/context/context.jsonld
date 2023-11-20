@@ -1,0 +1,70 @@
+{
+  "@context" : {
+    "Address" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Address"
+    },
+    "uuidShipment" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#uuidShipment"
+    },
+    "hasPickupAddress" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#hasPickupAddress"
+    },
+    "width" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#width"
+    },
+    "city" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#city"
+    },
+    "Product" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Product"
+    },
+    "height" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#height"
+    },
+    "hasDeliveryAddress" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#hasDeliveryAddress"
+    },
+    "orderDescription" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#orderDescription"
+    },
+    "Shipment" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Shipment"
+    },
+    "Price" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Price"
+    },
+    "createdTime" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#createdTime"
+    },
+    "postal" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#postal"
+    },
+    "apartment" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#apartment"
+    },
+    "address" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#address"
+    },
+    "amount" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#amount"
+    },
+    "uuidProduct" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#uuidProduct"
+    },
+    "inCurrency" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#inCurrency"
+    },
+    "Currency" : {
+      "@id" : "http://publications.europa.eu/resource/authority/currency/Currency"
+    },
+    "price" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#price"
+    },
+    "inShipment" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#inShipment"
+    },
+    "weight" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/shipment#weight"
+    }
+  }
+}

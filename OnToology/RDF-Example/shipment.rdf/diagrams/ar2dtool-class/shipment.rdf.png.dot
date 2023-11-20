@@ -1,0 +1,11 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"ship:shipment1" -> "ship:Price1" [ label = "ship:price" ];
+	"ship:shipment1" -> "biom:Briquette" [ label = "ship:inShipment" ];
+	"ship:shipment1" -> "ship:PickupAddress1" [ label = "ship:hasPickupAddress" ];
+	"ship:shipment1" -> "ship:DeliveryAddress1" [ label = "ship:hasDeliveryAddress" ];
+	"ship:Price1" -> "cur:Euro" [ label = "ship:inCurrency" ];
+	"biom:Briquette" -> "ship:shipment1" [ label = "ship:inShipment" ];
+
+}

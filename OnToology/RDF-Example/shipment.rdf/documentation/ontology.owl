@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:shipment="https://auroral.iot.linkeddata.es/def/shipment#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#address -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#address"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#amount -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#amount"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#apartment -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#apartment"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#city -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#city"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#createdTime -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#createdTime"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#hasDeliveryAddress -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#hasDeliveryAddress"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#hasPickupAddress -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#hasPickupAddress"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#height -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#height"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#inCurrency -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#inCurrency"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#inShipment -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#inShipment"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#orderDescription -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#orderDescription"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#postal -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#postal"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#price -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#price"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#uuidProduct -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#uuidProduct"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#uuidShipment -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#uuidShipment"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#weight -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#weight"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#width -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#width"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://publications.europa.eu/resource/authority/currency/Currency -->
+
+
+    <Class rdf:about="http://publications.europa.eu/resource/authority/currency/Currency"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#Address -->
+
+
+    <Class rdf:about="https://auroral.iot.linkeddata.es/def/shipment#Address"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#Price -->
+
+
+    <Class rdf:about="https://auroral.iot.linkeddata.es/def/shipment#Price"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#Product -->
+
+
+    <Class rdf:about="https://auroral.iot.linkeddata.es/def/shipment#Product"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#Shipment -->
+
+
+    <Class rdf:about="https://auroral.iot.linkeddata.es/def/shipment#Shipment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://publications.europa.eu/resource/authority/currency/Euro -->
+
+
+    <NamedIndividual rdf:about="http://publications.europa.eu/resource/authority/currency/Euro">
+        <rdf:type rdf:resource="http://publications.europa.eu/resource/authority/currency/Currency"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/biomass#Briquette -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/biomass#Briquette">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Product"/>
+        <shipment:inShipment rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#shipment1"/>
+        <shipment:uuidProduct>123</shipment:uuidProduct>
+    </NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#DeliveryAddress1 -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/shipment#DeliveryAddress1">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Address"/>
+        <shipment:address>Camino Viejo</shipment:address>
+        <shipment:apartment>12</shipment:apartment>
+        <shipment:city>Madrid</shipment:city>
+        <shipment:postal>3080</shipment:postal>
+    </NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#PickupAddress1 -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/shipment#PickupAddress1">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Address"/>
+        <shipment:address>Alche</shipment:address>
+        <shipment:apartment>12</shipment:apartment>
+        <shipment:city>Madrid</shipment:city>
+        <shipment:postal>3029</shipment:postal>
+    </NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#Price1 -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/shipment#Price1">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Price"/>
+        <shipment:amount rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</shipment:amount>
+        <shipment:inCurrency rdf:resource="http://publications.europa.eu/resource/authority/currency/Euro"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#shipment1 -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/shipment#shipment1">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Shipment"/>
+        <shipment:createdTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1201-01-01T12:10:14</shipment:createdTime>
+        <shipment:hasDeliveryAddress rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#DeliveryAddress1"/>
+        <shipment:hasPickupAddress rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#PickupAddress1"/>
+        <shipment:height>20 cm</shipment:height>
+        <shipment:inShipment rdf:resource="https://auroral.iot.linkeddata.es/def/biomass#Briquette"/>
+        <shipment:orderDescription>shipment of biuomass product</shipment:orderDescription>
+        <shipment:price rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Price1"/>
+        <shipment:uuidShipment>491</shipment:uuidShipment>
+        <shipment:weight>2 kg</shipment:weight>
+        <shipment:width>25 cm</shipment:width>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

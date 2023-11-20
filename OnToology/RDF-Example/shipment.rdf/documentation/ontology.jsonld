@@ -1,0 +1,174 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://publications.europa.eu/resource/authority/currency/Currency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://publications.europa.eu/resource/authority/currency/Euro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/currency/Currency"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Briquette",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Product"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#inShipment" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#shipment1"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#uuidProduct" : [ {
+    "@value" : "123"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#DeliveryAddress1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Address"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#address" : [ {
+    "@value" : "Camino Viejo"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#apartment" : [ {
+    "@value" : "12"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#city" : [ {
+    "@value" : "Madrid"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#postal" : [ {
+    "@value" : "3080"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#PickupAddress1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Address"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#address" : [ {
+    "@value" : "Alche"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#apartment" : [ {
+    "@value" : "12"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#city" : [ {
+    "@value" : "Madrid"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#postal" : [ {
+    "@value" : "3029"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Price",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Price1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Price"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#amount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "12.0"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#inCurrency" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/currency/Euro"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Shipment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#amount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#apartment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#city",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#createdTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#hasDeliveryAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#hasPickupAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#height",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#inCurrency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#inShipment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#orderDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#postal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#price",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#shipment1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Shipment"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#createdTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "1201-01-01T12:10:14"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#hasDeliveryAddress" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#DeliveryAddress1"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#hasPickupAddress" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#PickupAddress1"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#height" : [ {
+    "@value" : "20 cm"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#inShipment" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/biomass#Briquette"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#orderDescription" : [ {
+    "@value" : "shipment of biuomass product"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#price" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/shipment#Price1"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#uuidShipment" : [ {
+    "@value" : "491"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#weight" : [ {
+    "@value" : "2 kg"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/shipment#width" : [ {
+    "@value" : "25 cm"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#uuidProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#uuidShipment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#weight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/shipment#width",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
