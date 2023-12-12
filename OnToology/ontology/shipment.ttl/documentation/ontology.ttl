@@ -166,6 +166,14 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
             rdfs:label "pickup time" .
 
 
+###  https://auroral.iot.linkeddata.es/def/shipment#providedBy
+:providedBy rdf:type owl:ObjectProperty ;
+            owl:inverseOf :provides ;
+            rdfs:domain :Product ;
+            rdfs:range <https://auroral.iot.linkeddata.es/def/core#User> ;
+            rdfs:label "provided by" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/shipment#provides
 :provides rdf:type owl:ObjectProperty ;
           rdfs:domain <https://auroral.iot.linkeddata.es/def/core#User> ;
@@ -185,6 +193,14 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                     rdfs:domain :BoughtQuantity ;
                     rdfs:range :Shipment ;
                     rdfs:label "quantity in shipment" .
+
+
+###  https://auroral.iot.linkeddata.es/def/shipment#receivedBy
+:receivedBy rdf:type owl:ObjectProperty ;
+            owl:inverseOf :receives ;
+            rdfs:domain :Product ;
+            rdfs:range <https://auroral.iot.linkeddata.es/def/core#User> ;
+            rdfs:comment "received by" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#receives

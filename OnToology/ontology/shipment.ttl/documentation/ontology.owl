@@ -271,6 +271,18 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#providedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#providedBy">
+        <owl:inverseOf rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#provides"/>
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Product"/>
+        <rdfs:range rdf:resource="https://auroral.iot.linkeddata.es/def/core#User"/>
+        <rdfs:label>provided by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/shipment#provides -->
 
 
@@ -300,6 +312,18 @@
         <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity"/>
         <rdfs:range rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Shipment"/>
         <rdfs:label>quantity in shipment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/shipment#receivedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/shipment#receivedBy">
+        <owl:inverseOf rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#receives"/>
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/shipment#Product"/>
+        <rdfs:range rdf:resource="https://auroral.iot.linkeddata.es/def/core#User"/>
+        <rdfs:comment>received by</rdfs:comment>
     </owl:ObjectProperty>
     
 
