@@ -1,0 +1,240 @@
+@prefix : <https://auroral.iot.linkeddata.es/def/test/shipment#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://auroral.iot.linkeddata.es/def/test/shipment#> .
+
+<https://auroral.iot.linkeddata.es/def/test/shipment#> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/def/vtc#belongsTo
+<https://w3id.org/def/vtc#belongsTo> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/vtc#desiredBehaviour
+<https://w3id.org/def/vtc#desiredBehaviour> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/def/vtc#TestCaseDesign
+<https://w3id.org/def/vtc#TestCaseDesign> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vtc#TestSuite
+<https://w3id.org/def/vtc#TestSuite> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/def/vtc#Test1
+<https://w3id.org/def/vtc#Test1> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "Biomass subClassOf Product" .
+
+
+###  https://w3id.org/def/vtc#Test10
+<https://w3id.org/def/vtc#Test10> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "ShipmentUpdate hasDestination Point" .
+
+
+###  https://w3id.org/def/vtc#Test11
+<https://w3id.org/def/vtc#Test11> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "ShipmentUpdate hasDocument Document" .
+
+
+###  https://w3id.org/def/vtc#Test12
+<https://w3id.org/def/vtc#Test12> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "ShipmentUpdate hasOrigin Point" .
+
+
+###  https://w3id.org/def/vtc#Test13
+<https://w3id.org/def/vtc#Test13> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Shipment hasPickupAddress Address" .
+
+
+###  https://w3id.org/def/vtc#Test14
+<https://w3id.org/def/vtc#Test14> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Storage hasPile StoragePile" .
+
+
+###  https://w3id.org/def/vtc#Test15
+<https://w3id.org/def/vtc#Test15> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Shipment hasSellingPrice Price" .
+
+
+###  https://w3id.org/def/vtc#Test16
+<https://w3id.org/def/vtc#Test16> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Shipment hasUpdate ShipmentUpdate" .
+
+
+###  https://w3id.org/def/vtc#Test17
+<https://w3id.org/def/vtc#Test17> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Price inCurrency Currency" .
+
+
+###  https://w3id.org/def/vtc#Test18
+<https://w3id.org/def/vtc#Test18> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Product inShipment Shipment" .
+
+
+###  https://w3id.org/def/vtc#Test19
+<https://w3id.org/def/vtc#Test19> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "ShipmentUpdate inTransportation Transportation" .
+
+
+###  https://w3id.org/def/vtc#Test2
+<https://w3id.org/def/vtc#Test2> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "DocumentType subClassOf Document" .
+
+
+###  https://w3id.org/def/vtc#Test20
+<https://w3id.org/def/vtc#Test20> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "ShipmentUpdate isParentOf ShipmentUpdate" .
+
+
+###  https://w3id.org/def/vtc#Test21
+<https://w3id.org/def/vtc#Test21> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Storage location Point" .
+
+
+###  https://w3id.org/def/vtc#Test22
+<https://w3id.org/def/vtc#Test22> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Shipment pickupTime DeliveryPickupTime" .
+
+
+###  https://w3id.org/def/vtc#Test23
+<https://w3id.org/def/vtc#Test23> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "User provides Product" .
+
+
+###  https://w3id.org/def/vtc#Test24
+<https://w3id.org/def/vtc#Test24> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Product quantity BoughtQuantity" .
+
+
+###  https://w3id.org/def/vtc#Test25
+<https://w3id.org/def/vtc#Test25> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "BoughtQuantity quantityInShipment Shipment" .
+
+
+###  https://w3id.org/def/vtc#Test26
+<https://w3id.org/def/vtc#Test26> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "User receives Product" .
+
+
+###  https://w3id.org/def/vtc#Test27
+<https://w3id.org/def/vtc#Test27> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "ShipmentUpdate storedIn Storage" .
+
+
+###  https://w3id.org/def/vtc#Test28
+<https://w3id.org/def/vtc#Test28> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Sender updates ShipmentUpdate" .
+
+
+###  https://w3id.org/def/vtc#Test3
+<https://w3id.org/def/vtc#Test3> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "Receiver subClassOf User" .
+
+
+###  https://w3id.org/def/vtc#Test4
+<https://w3id.org/def/vtc#Test4> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "Sender SubClassOf User" .
+
+
+###  https://w3id.org/def/vtc#Test5
+<https://w3id.org/def/vtc#Test5> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "Sender belongsTo LogisticCompany" .
+
+
+###  https://w3id.org/def/vtc#Test6
+<https://w3id.org/def/vtc#Test6> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "Shipment deliveryTime DeliveryPickupTime" .
+
+
+###  https://w3id.org/def/vtc#Test7
+<https://w3id.org/def/vtc#Test7> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "LogisticCompany hasAddress Address" .
+
+
+###  https://w3id.org/def/vtc#Test8
+<https://w3id.org/def/vtc#Test8> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "Shipment hasBuyerPrice Price" .
+
+
+###  https://w3id.org/def/vtc#Test9
+<https://w3id.org/def/vtc#Test9> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                 <https://w3id.org/def/vtc#belongsTo> <https://w3id.org/def/vtc#TestSuiteShipment> ;
+                                 <https://w3id.org/def/vtc#desiredBehaviour> "Shipment hasDeliveryAddress Address" .
+
+
+###  https://w3id.org/def/vtc#TestSuiteShipment
+<https://w3id.org/def/vtc#TestSuiteShipment> rdf:type owl:NamedIndividual ,
+                                                      <https://w3id.org/def/vtc#TestSuite> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

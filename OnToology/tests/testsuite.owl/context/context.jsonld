@@ -1,0 +1,16 @@
+{
+  "@context" : {
+    "belongsTo" : {
+      "@id" : "https://w3id.org/def/vtc#belongsTo"
+    },
+    "desiredBehaviour" : {
+      "@id" : "https://w3id.org/def/vtc#desiredBehaviour"
+    },
+    "TestCaseDesign" : {
+      "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+    },
+    "TestSuite" : {
+      "@id" : "https://w3id.org/def/vtc#TestSuite"
+    }
+  }
+}
