@@ -1,0 +1,398 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://auroral.iot.linkeddata.es/def/test/shipment#"
+     xml:base="https://auroral.iot.linkeddata.es/def/test/shipment"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vtc="https://w3id.org/def/vtc#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://auroral.iot.linkeddata.es/def/test/shipment#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/vtc#belongsTo -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vtc#belongsTo"/>
+    
+
+
+    <!-- https://w3id.org/def/vtc#desiredBehaviour -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vtc#desiredBehaviour"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/vtc#TestCaseDesign -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vtc#TestCaseDesign"/>
+    
+
+
+    <!-- https://w3id.org/def/vtc#TestSuite -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vtc#TestSuite"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test1">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>Biomass subClassOf Product</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test10 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test10">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>ShipmentUpdate hasDestination Point</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test11 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test11">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>ShipmentUpdate hasDocument Document</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test12 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test12">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>ShipmentUpdate hasOrigin Point</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test13 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test13">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>Shipment hasPickupAddress Address</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test14 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test14">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>Storage hasPile StoragePile</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test15 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test15">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>Shipment hasSellingPrice Price</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test16 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test16">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>Shipment hasUpdate ShipmentUpdate</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test17 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test17">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>Price inCurrency Currency</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test18 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test18">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>Product inShipment Shipment</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test19 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test19">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>ShipmentUpdate inTransportation Transportation</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test2">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>DocumentType subClassOf Document</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test20 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test20">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>ShipmentUpdate isParentOf ShipmentUpdate</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test21 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test21">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>Storage location Point</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test22 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test22">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>Shipment pickupTime DeliveryPickupTime</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test23 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test23">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>User provides Product</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test24 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test24">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>Product quantity BoughtQuantity</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test25 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test25">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>BoughtQuantity quantityInShipment Shipment</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test26 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test26">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>User receives Product</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test27 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test27">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>ShipmentUpdate storedIn Storage</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test28 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test28">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>Sender updates ShipmentUpdate</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test3">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>Receiver subClassOf User</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test4">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>Sender SubClassOf User</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test5 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test5">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>Sender belongsTo LogisticCompany</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test6 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test6">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>Shipment deliveryTime DeliveryPickupTime</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test7 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test7">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>LogisticCompany hasAddress Address</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test8 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test8">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>Shipment hasBuyerPrice Price</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test9 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test9">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteShipment"/>
+        <vtc:desiredBehaviour>Shipment hasDeliveryAddress Address</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#TestSuiteShipment -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#TestSuiteShipment">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestSuite"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

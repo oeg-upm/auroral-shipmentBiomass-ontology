@@ -44,6 +44,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 <http://www.w3.org/2003/01/geo/wgs84_pos#location> rdf:type owl:ObjectProperty ;
                                                    rdfs:domain :Storage ;
                                                    rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#Point> ;
+                                                   rdfs:comment "A relationship between the storage and its location" ;
                                                    rdfs:label "location" .
 
 
@@ -51,6 +52,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :belongsTo rdf:type owl:ObjectProperty ;
            rdfs:domain :Sender ;
            rdfs:range :LogisticCompany ;
+           rdfs:comment "Relationship specifies that a sender is an employer in a logistic company" ;
            rdfs:label "belongs to" .
 
 
@@ -58,6 +60,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :deliveryTime rdf:type owl:ObjectProperty ;
               rdfs:domain :Shipment ;
               rdfs:range :DeliveryPickupTime ;
+              rdfs:comment "Relationship between the shipment and its delivery time" ;
               rdfs:label "delivery time" .
 
 
@@ -65,6 +68,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :hasAddress rdf:type owl:ObjectProperty ;
             rdfs:domain :LogisticCompany ;
             rdfs:range :Address ;
+            rdfs:comment "Relationship specifies the address of a logistic company" ;
             rdfs:label "has address" .
 
 
@@ -72,6 +76,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :hasBuyerPrice rdf:type owl:ObjectProperty ;
                rdfs:domain :Shipment ;
                rdfs:range :Price ;
+               rdfs:comment "Relationship between shipment of a product and purchase price" ;
                rdfs:label "has buyer price" .
 
 
@@ -79,6 +84,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :hasDeliveryAddress rdf:type owl:ObjectProperty ;
                     rdfs:domain :Shipment ;
                     rdfs:range :Address ;
+                    rdfs:comment "Relationship specifies the delivery address of a shipment" ;
                     rdfs:label "has delivery address" .
 
 
@@ -86,6 +92,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :hasDestination rdf:type owl:ObjectProperty ;
                 rdfs:domain :ShipmentUpdate ;
                 rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#Point> ;
+                rdfs:comment "Relationship between the shipment update and its location" ;
                 rdfs:label "has destination" .
 
 
@@ -93,6 +100,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :hasDocument rdf:type owl:ObjectProperty ;
              rdfs:domain :ShipmentUpdate ;
              rdfs:range :Document ;
+             rdfs:comment "Relationship between the shipment update and its details in a document" ;
              rdfs:label "has document" .
 
 
@@ -100,6 +108,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :hasOrigin rdf:type owl:ObjectProperty ;
            rdfs:domain :ShipmentUpdate ;
            rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#Point> ;
+           rdfs:comment "Relationship between the shipment update and its location" ;
            rdfs:label "has origin" .
 
 
@@ -107,6 +116,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :hasPickupAddress rdf:type owl:ObjectProperty ;
                   rdfs:domain :Shipment ;
                   rdfs:range :Address ;
+                  rdfs:comment "Relationship between the shipment and its pickup address" ;
                   rdfs:label "has pickup address" .
 
 
@@ -114,6 +124,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :hasPile rdf:type owl:ObjectProperty ;
          rdfs:domain :Storage ;
          rdfs:range :StoragePile ;
+         rdfs:comment "Relationship between the storage and the storage pile" ;
          rdfs:label "has pile" .
 
 
@@ -121,6 +132,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :hasSellingPrice rdf:type owl:ObjectProperty ;
                  rdfs:domain :Shipment ;
                  rdfs:range :Price ;
+                 rdfs:comment "A Relationship between a shipment and its selling price" ;
                  rdfs:label "has selling price" .
 
 
@@ -128,6 +140,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :hasUpdate rdf:type owl:ObjectProperty ;
            rdfs:domain :Shipment ;
            rdfs:range :ShipmentUpdate ;
+           rdfs:comment "A relationship between the shipment and its update" ;
            rdfs:label "has update" .
 
 
@@ -135,6 +148,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :inCurrency rdf:type owl:ObjectProperty ;
             rdfs:domain :Price ;
             rdfs:range :Currency ;
+            rdfs:comment "A relationship between the price and its currencies" ;
             rdfs:label "in currency" .
 
 
@@ -142,6 +156,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :inShipment rdf:type owl:ObjectProperty ;
             rdfs:domain :Product ;
             rdfs:range :Shipment ;
+            rdfs:comment "A relationship between the product and the shipment" ;
             rdfs:label "in shipment" .
 
 
@@ -149,6 +164,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :inTransportation rdf:type owl:ObjectProperty ;
                   rdfs:domain :ShipmentUpdate ;
                   rdfs:range :Transportation ;
+                  rdfs:comment "A relationship between the shipment update and the mean of transport used" ;
                   rdfs:label "in transportation" .
 
 
@@ -156,6 +172,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :isParentOf rdf:type owl:ObjectProperty ;
             rdfs:domain :ShipmentUpdate ;
             rdfs:range :ShipmentUpdate ;
+            rdfs:comment "A relationship to specify that a shipment update is a parent of another shipment update" ;
             rdfs:label "is parent of" .
 
 
@@ -163,6 +180,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :pickupTime rdf:type owl:ObjectProperty ;
             rdfs:domain :Shipment ;
             rdfs:range :DeliveryPickupTime ;
+            rdfs:comment "A relationship between the shipment and the delivery and the pickup time" ;
             rdfs:label "pickup time" .
 
 
@@ -171,6 +189,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
             owl:inverseOf :provides ;
             rdfs:domain :Product ;
             rdfs:range <https://auroral.iot.linkeddata.es/def/core#User> ;
+            rdfs:comment "A relationship between the prioduct and its provider" ;
             rdfs:label "provided by" .
 
 
@@ -178,6 +197,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :provides rdf:type owl:ObjectProperty ;
           rdfs:domain <https://auroral.iot.linkeddata.es/def/core#User> ;
           rdfs:range :Product ;
+          rdfs:comment "A relationship between the product and its provider" ;
           rdfs:label "provides" .
 
 
@@ -185,6 +205,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :quantity rdf:type owl:ObjectProperty ;
           rdfs:domain :Product ;
           rdfs:range :BoughtQuantity ;
+          rdfs:comment "The quantity of bought product" ;
           rdfs:label "quantity" .
 
 
@@ -192,6 +213,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :quantityInShipment rdf:type owl:ObjectProperty ;
                     rdfs:domain :BoughtQuantity ;
                     rdfs:range :Shipment ;
+                    rdfs:comment "The quantity of product in shipment" ;
                     rdfs:label "quantity in shipment" .
 
 
@@ -200,13 +222,15 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
             owl:inverseOf :receives ;
             rdfs:domain :Product ;
             rdfs:range <https://auroral.iot.linkeddata.es/def/core#User> ;
-            rdfs:comment "received by" .
+            rdfs:comment "A relationship between the product and its receiver" ;
+            rdfs:label "received by" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#receives
 :receives rdf:type owl:ObjectProperty ;
           rdfs:domain <https://auroral.iot.linkeddata.es/def/core#User> ;
           rdfs:range :Product ;
+          rdfs:comment "A relationship between the product and its receiver" ;
           rdfs:label "receives" .
 
 
@@ -214,6 +238,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :storedIn rdf:type owl:ObjectProperty ;
           rdfs:domain :ShipmentUpdate ;
           rdfs:range :Storage ;
+          rdfs:comment "A relationship between theshipment update and its storage" ;
           rdfs:label "stored in" .
 
 
@@ -221,6 +246,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :updates rdf:type owl:ObjectProperty ;
          rdfs:domain :Sender ;
          rdfs:range :ShipmentUpdate ;
+         rdfs:comment "A relationship between the shipment and its sender" ;
          rdfs:label "updates" .
 
 
@@ -230,16 +256,19 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#alt
 <http://www.w3.org/2003/01/geo/wgs84_pos#alt> rdf:type owl:DatatypeProperty ;
+                                              rdfs:comment "The altitude of a location" ;
                                               rdfs:label "alt" .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
 <http://www.w3.org/2003/01/geo/wgs84_pos#lat> rdf:type owl:DatatypeProperty ;
+                                              rdfs:comment "The latitude of a location" ;
                                               rdfs:label "lat" .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#long
 <http://www.w3.org/2003/01/geo/wgs84_pos#long> rdf:type owl:DatatypeProperty ;
+                                               rdfs:comment "The longitude of a location" ;
                                                rdfs:label "long" .
 
 
@@ -247,6 +276,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :address rdf:type owl:DatatypeProperty ;
          rdfs:domain :Address ;
          rdfs:range xsd:string ;
+         rdfs:comment "The full address" ;
          rdfs:label "address" .
 
 
@@ -254,6 +284,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :amount rdf:type owl:DatatypeProperty ;
         rdfs:domain :Price ;
         rdfs:range xsd:float ;
+        rdfs:comment "The amount of a price" ;
         rdfs:label "amount" .
 
 
@@ -261,6 +292,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :apartement rdf:type owl:DatatypeProperty ;
             rdfs:domain :Address ;
             rdfs:range xsd:string ;
+            rdfs:comment "The apartement location" ;
             rdfs:label "apartement" .
 
 
@@ -268,6 +300,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :city rdf:type owl:DatatypeProperty ;
       rdfs:domain :Address ;
       rdfs:range xsd:string ;
+      rdfs:comment "The city of a location" ;
       rdfs:label "city" .
 
 
@@ -275,6 +308,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :companyName rdf:type owl:DatatypeProperty ;
              rdfs:domain :LogisticCompany ;
              rdfs:range xsd:string ;
+             rdfs:comment "The name of the logistic company" ;
              rdfs:label "company name" .
 
 
@@ -282,6 +316,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :companyType rdf:type owl:DatatypeProperty ;
              rdfs:domain :LogisticCompany ;
              rdfs:range xsd:string ;
+             rdfs:comment "The type of a logistic company" ;
              rdfs:label "company type" .
 
 
@@ -289,6 +324,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :createdTime rdf:type owl:DatatypeProperty ;
              rdfs:domain :Shipment ;
              rdfs:range xsd:dateTime ;
+             rdfs:comment "The created time of a shipment" ;
              rdfs:label "created time" .
 
 
@@ -296,6 +332,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :currentAmount rdf:type owl:DatatypeProperty ;
                rdfs:domain :Product ;
                rdfs:range xsd:string ;
+               rdfs:comment "The current amount of a product in a shipment" ;
                rdfs:label "current amount" .
 
 
@@ -303,6 +340,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :dateStart rdf:type owl:DatatypeProperty ;
            rdfs:domain :DeliveryPickupTime ;
            rdfs:range xsd:dateTime ;
+           rdfs:comment "The start date of the delivery or the pickup time of a product" ;
            rdfs:label "date start" .
 
 
@@ -310,6 +348,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :dateStop rdf:type owl:DatatypeProperty ;
           rdfs:domain :DeliveryPickupTime ;
           rdfs:range xsd:dateTime ;
+          rdfs:comment "The end date of the delivery or the pickup time of a product" ;
           rdfs:label "date stop" .
 
 
@@ -317,6 +356,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :days rdf:type owl:DatatypeProperty ;
       rdfs:domain :LogisticCompany ;
       rdfs:range xsd:string ;
+      rdfs:comment "The  working days of a logistic company" ;
       rdfs:label "days" .
 
 
@@ -324,6 +364,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :descriptionDocumentType rdf:type owl:DatatypeProperty ;
                          rdfs:domain :DocumentType ;
                          rdfs:range xsd:string ;
+                         rdfs:comment "The description of the document type used during the shipment" ;
                          rdfs:label "description document type" .
 
 
@@ -331,6 +372,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :email rdf:type owl:DatatypeProperty ;
        rdfs:domain :LogisticCompany ;
        rdfs:range xsd:string ;
+       rdfs:comment "The email of a logistic company" ;
        rdfs:label "email" .
 
 
@@ -338,6 +380,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :hasType rdf:type owl:DatatypeProperty ;
          rdfs:domain :ShipmentUpdate ;
          rdfs:range xsd:string ;
+         rdfs:comment "The type of a shipment update" ;
          rdfs:label "has type" .
 
 
@@ -345,6 +388,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :height rdf:type owl:DatatypeProperty ;
         rdfs:domain :Shipment ;
         rdfs:range xsd:string ;
+        rdfs:comment "The height of a shipment" ;
         rdfs:label "height" .
 
 
@@ -352,6 +396,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :licencePlate rdf:type owl:DatatypeProperty ;
               rdfs:domain :Transportation ;
               rdfs:range xsd:string ;
+              rdfs:comment "The license plate of a mean of transport used for the shipment of a product" ;
               rdfs:label "licence plate" .
 
 
@@ -359,6 +404,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :mimeType rdf:type owl:DatatypeProperty ;
           rdfs:domain :Document ;
           rdfs:range xsd:string ;
+          rdfs:comment "The mime type of a document" ;
           rdfs:label "mime type" .
 
 
@@ -366,6 +412,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :model rdf:type owl:DatatypeProperty ;
        rdfs:domain :Transportation ;
        rdfs:range xsd:string ;
+       rdfs:comment "The model of the transport mean used for the shipment" ;
        rdfs:label "model" .
 
 
@@ -373,6 +420,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :name rdf:type owl:DatatypeProperty ;
       rdfs:domain :Transportation ;
       rdfs:range xsd:string ;
+      rdfs:comment "The name of the mean of transport used for the shipment" ;
       rdfs:label "name" .
 
 
@@ -380,6 +428,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :nameDocumentType rdf:type owl:DatatypeProperty ;
                   rdfs:domain :DocumentType ;
                   rdfs:range xsd:string ;
+                  rdfs:comment "The name of the document type" ;
                   rdfs:label "name document type" .
 
 
@@ -387,6 +436,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :numberActiveBuyer rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Receiver ;
                    rdfs:range xsd:integer ;
+                   rdfs:comment "The number of the active buyer of a products (receiver)" ;
                    rdfs:label "number active buyer" .
 
 
@@ -394,6 +444,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :numberActiveProducer rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Sender ;
                       rdfs:range xsd:integer ;
+                      rdfs:comment "The numebr of the active producers of a product (sender)" ;
                       rdfs:label "number active producer" .
 
 
@@ -401,6 +452,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :orderDescription rdf:type owl:DatatypeProperty ;
                   rdfs:domain :Shipment ;
                   rdfs:range xsd:string ;
+                  rdfs:comment "The order description of a given shipment" ;
                   rdfs:label "order description" .
 
 
@@ -408,6 +460,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :orderInfo rdf:type owl:DatatypeProperty ;
            rdfs:domain :Shipment ;
            rdfs:range xsd:string ;
+           rdfs:comment "The order info of a shipment" ;
            rdfs:label "order info" .
 
 
@@ -415,6 +468,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :personCount rdf:type owl:DatatypeProperty ;
              rdfs:domain :Shipment ;
              rdfs:range xsd:integer ;
+             rdfs:comment "The number of people involved in theshipment process" ;
              rdfs:label "person count" .
 
 
@@ -422,6 +476,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :phone rdf:type owl:DatatypeProperty ;
        rdfs:domain :LogisticCompany ;
        rdfs:range xsd:integer ;
+       rdfs:comment "The phone number of a logistic company" ;
        rdfs:label "phone" .
 
 
@@ -429,6 +484,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :postal rdf:type owl:DatatypeProperty ;
         rdfs:domain :Address ;
         rdfs:range xsd:string ;
+        rdfs:comment "The poctal code of a given address" ;
         rdfs:label "postal" .
 
 
@@ -436,19 +492,15 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :remoteAddress rdf:type owl:DatatypeProperty ;
                rdfs:domain :Document ;
                rdfs:range xsd:anyURI ;
+               rdfs:comment "The remote address of a document" ;
                rdfs:label "remote address" .
-
-
-###  https://auroral.iot.linkeddata.es/def/shipment#ship
-:ship rdf:type owl:DatatypeProperty ;
-      rdfs:domain :Shipment ;
-      rdfs:label "ship" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#tareKg
 :tareKg rdf:type owl:DatatypeProperty ;
         rdfs:domain :Transportation ;
         rdfs:range xsd:float ;
+        rdfs:comment "The weight of an empty vehicle or container" ;
         rdfs:label "tare kg" .
 
 
@@ -456,6 +508,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :timeUpdate rdf:type owl:DatatypeProperty ;
             rdfs:domain :ShipmentUpdate ;
             rdfs:range xsd:dateTime ;
+            rdfs:comment "The update time of a shipment" ;
             rdfs:label "time update" .
 
 
@@ -463,6 +516,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :totalAmount rdf:type owl:DatatypeProperty ;
              rdfs:domain :Product ;
              rdfs:range xsd:string ;
+             rdfs:comment "The total amount of a product" ;
              rdfs:label "total amount" .
 
 
@@ -470,6 +524,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :uuidCompany rdf:type owl:DatatypeProperty ;
              rdfs:domain :LogisticCompany ;
              rdfs:range xsd:string ;
+             rdfs:comment "The identifier of a company" ;
              rdfs:label "uuid company" .
 
 
@@ -477,20 +532,15 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :uuidDocument rdf:type owl:DatatypeProperty ;
               rdfs:domain :Document ;
               rdfs:range xsd:string ;
+              rdfs:comment "The identifier of a document" ;
               rdfs:label "uuid document" .
-
-
-###  https://auroral.iot.linkeddata.es/def/shipment#uuidDocumentType
-:uuidDocumentType rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :DocumentType ;
-                  rdfs:range xsd:string ;
-                  rdfs:label "uuid document type" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#uuidPile
 :uuidPile rdf:type owl:DatatypeProperty ;
           rdfs:domain :StoragePile ;
           rdfs:range xsd:string ;
+          rdfs:comment "The identifier of a pile" ;
           rdfs:label "uuid pile" .
 
 
@@ -498,6 +548,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :uuidProduct rdf:type owl:DatatypeProperty ;
              rdfs:domain :Product ;
              rdfs:range xsd:string ;
+             rdfs:comment "The identifier of a product" ;
              rdfs:label "uuid product" .
 
 
@@ -505,6 +556,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :uuidShip rdf:type owl:DatatypeProperty ;
           rdfs:domain :Shipment ;
           rdfs:range xsd:string ;
+          rdfs:comment "The identifier of a shipment" ;
           rdfs:label "uuid ship" .
 
 
@@ -512,6 +564,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :uuidShipUpdate rdf:type owl:DatatypeProperty ;
                 rdfs:domain :ShipmentUpdate ;
                 rdfs:range xsd:string ;
+                rdfs:comment "The identifier of a shipment update" ;
                 rdfs:label "uuid ship update" .
 
 
@@ -519,6 +572,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :uuidStorage rdf:type owl:DatatypeProperty ;
              rdfs:domain :Storage ;
              rdfs:range xsd:string ;
+             rdfs:comment "The identifier of a storage" ;
              rdfs:label "uuid storage" .
 
 
@@ -526,6 +580,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :uuidTrans rdf:type owl:DatatypeProperty ;
            rdfs:domain :Transportation ;
            rdfs:range xsd:string ;
+           rdfs:comment "Theidentifier of a transportation mean" ;
            rdfs:label "uuid trans" .
 
 
@@ -533,6 +588,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :webSite rdf:type owl:DatatypeProperty ;
          rdfs:domain :LogisticCompany ;
          rdfs:range xsd:anyURI ;
+         rdfs:comment "The web site of a company" ;
          rdfs:label "web site" .
 
 
@@ -540,6 +596,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :weight rdf:type owl:DatatypeProperty ;
         rdfs:domain :Shipment ;
         rdfs:range xsd:string ;
+        rdfs:comment "The weight of a shipment" ;
         rdfs:label "weight" .
 
 
@@ -547,6 +604,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :width rdf:type owl:DatatypeProperty ;
        rdfs:domain :Shipment ;
        rdfs:range xsd:string ;
+       rdfs:comment "The width of a shipment" ;
        rdfs:label "width" .
 
 
@@ -554,6 +612,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 :year rdf:type owl:DatatypeProperty ;
       rdfs:domain :Transportation ;
       rdfs:range xsd:integer ;
+      rdfs:comment "The year of a mean of transport is constructed" ;
       rdfs:label "year" .
 
 
@@ -563,100 +622,119 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#Point
 <http://www.w3.org/2003/01/geo/wgs84_pos#Point> rdf:type owl:Class ;
+                                                rdfs:comment "Presents geospatial location" ;
                                                 rdfs:label "Point" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/biomass#Biomass
 <https://auroral.iot.linkeddata.es/def/biomass#Biomass> rdf:type owl:Class ;
                                                         rdfs:subClassOf :Product ;
+                                                        rdfs:comment "Represents a product example that is in shipment" ;
                                                         rdfs:label "Biomass" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#User
 <https://auroral.iot.linkeddata.es/def/core#User> rdf:type owl:Class ;
+                                                  rdfs:comment "Determines the considered users during the shipment process. The users are genarlly the sender and the receiver of products" ;
                                                   rdfs:label "User" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#Address
 :Address rdf:type owl:Class ;
+         rdfs:comment "Determines the information related to the delivery and the pickup address for a product" ;
          rdfs:label "Address" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#BoughtQuantity
 :BoughtQuantity rdf:type owl:Class ;
+                rdfs:comment "determines the bought quantity of a product in shipment" ;
                 rdfs:label "Bought Quantity" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#Currency
 :Currency rdf:type owl:Class ;
+          rdfs:comment "Determines the currency of the shipment price" ;
           rdfs:label "Currency" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#DeliveryPickupTime
 :DeliveryPickupTime rdf:type owl:Class ;
+                    rdfs:comment "Determines the setimated time of the delivery and the pickup time of a product" ;
                     rdfs:label "Delivery Pickup Time" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#Document
 :Document rdf:type owl:Class ;
+          rdfs:comment "Specifies the document where the shipment update is reported" ;
           rdfs:label "Document" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#DocumentType
 :DocumentType rdf:type owl:Class ;
               rdfs:subClassOf :Document ;
+              rdfs:comment "specifies the type of the used document to report the shipment update of the product." ;
               rdfs:label "Document Type" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#LogisticCompany
 :LogisticCompany rdf:type owl:Class ;
+                 rdfs:comment "Represents information relating to the logistics company responsible for the shipping process." ;
                  rdfs:label "Logistic Company" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#Price
 :Price rdf:type owl:Class ;
+       rdfs:comment "Refers to the price of the shipment of a product" ;
        rdfs:label "Price" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#Product
 :Product rdf:type owl:Class ;
+         rdfs:comment "This concept specifies the product that will be delivered" ;
          rdfs:label "Product" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#Receiver
 :Receiver rdf:type owl:Class ;
           rdfs:subClassOf <https://auroral.iot.linkeddata.es/def/core#User> ;
+          rdfs:comment "It refers to the receiver of the product that could be a person, an organization, etc." ;
           rdfs:label "Receiver" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#Sender
 :Sender rdf:type owl:Class ;
         rdfs:subClassOf <https://auroral.iot.linkeddata.es/def/core#User> ;
+        rdfs:comment "It refers to the provider of the product that could be a person, an organization, etc." ;
         rdfs:label "Sender" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#Shipment
 :Shipment rdf:type owl:Class ;
+          rdfs:comment "Defines the main information of the shipment process namely the identifier and the created time." ;
           rdfs:label "Shipment" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#ShipmentUpdate
 :ShipmentUpdate rdf:type owl:Class ;
+                rdfs:comment "This concept tracks the updates in the product status during the shipment process. It has data properties like the identifier, the timeUpdate and the type." ;
                 rdfs:label "Shipment Update" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#Storage
 :Storage rdf:type owl:Class ;
+         rdfs:comment "determines the storage location in delivery during shipment update." ;
          rdfs:label "Storage" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#StoragePile
 :StoragePile rdf:type owl:Class ;
+             rdfs:comment "It refers to  any outdoor storage on a source’s property of material. Every storage has a storage pile." ;
              rdfs:label "Storage Pile" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/shipment#Transportation
 :Transportation rdf:type owl:Class ;
+                rdfs:comment "determines the means of transport of the product is shipment" ;
                 rdfs:label "Transportation" .
 
 
